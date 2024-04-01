@@ -3,7 +3,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.formatting.IFormattedText;
 
 events.onEntityTravelToDimension(function(event as crafttweaker.event.EntityTravelToDimensionEvent){
-	if(!user.world.isRemote() && event.entity instanceof IPlayer){
+	if(!event.entity.world.isRemote() && event.entity instanceof IPlayer){
 		val user as IPlayer = event.entity;
 		if(event.dimension == 424 || event.dimension == 66 || event.dimension == 1048) {
             val minX = (user.x as int) - 2;
