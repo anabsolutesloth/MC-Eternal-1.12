@@ -8,6 +8,7 @@ import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.entity.Attribute;
 import crafttweaker.entity.AttributeModifier;
+import crafttweaker.text.ITextComponent;
 
 events.onEntityLivingUseItemStart(function(event as crafttweaker.event.EntityLivingUseItemEvent.Start){
 	if(event.isPlayer){
@@ -18,7 +19,7 @@ events.onEntityLivingUseItemStart(function(event as crafttweaker.event.EntityLiv
 				if(multishoot == enchts.definition.id){
 					event.cancel();
 					if (!event.player.world.isRemote()) {
-						event.player.sendChat(game.localize("mce.cofhcore.message.multishot_is_infact_disabled").replace("%s", event.player.name));
+						event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.cofhcore.message.multishot_is_infact_disabled", [event.player.name]));
 					}
 				}
 			}
@@ -40,15 +41,10 @@ events.onEntityLivingEquipmentChange(function(event as crafttweaker.event.Entity
 		if(delete || event.newItem.definition.id == "inventorypets:solstice_sword"){
 			if (event.entityLivingBase instanceof IPlayer) {
 				val user as IPlayer = event.entityLivingBase;
+				event.entityLivingBase.setItemToSlot(event.slot, null);
 				if (!event.entityLivingBase.world.isRemote()) {
-					event.entityLivingBase.setItemToSlot(event.slot, null);
-					user.sendChat(game.localize("mce.generic.message.item_yeeted_from_exist"));
+					user.sendRichTextMessage(ITextComponent.fromTranslation("mce.generic.message.item_yeeted_from_exist"));
 				}
-				if (event.entityLivingBase.world.isRemote()) {
-					event.entityLivingBase.setItemToSlot(event.slot, null);
-					user.sendChat(game.localize("mce.generic.message.item_yeeted_from_exist"));
-				}
-				
 			}				
 		}
 	}
@@ -58,7 +54,7 @@ events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteract
 	if(!event.world.remote && event.block.definition.id has "tombstone:decorative_" && !isNull(event.item) && event.item.definition.id == "tombstone:book_of_disenchantment" && !isNull(event.player.offHandHeldItem)){
 		for obj in event.player.nbt.ForgeCaps.asMap()["baubles:container"].Items.asList() {
 			if(obj.id.asString() == "astralsorcery:itemenchantmentamulet"){
-				event.player.sendChat("§c"+ game.localize("mce.tombstone.message.remove_resplendent_prism"));
+				event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.tombstone.message.remove_resplendent_prism"));
 				event.player.setCooldown(<tombstone:book_of_disenchantment>, 10);
 				event.cancellationResult = "FAIL";
 				event.cancel();
@@ -143,35 +139,42 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
 					break;
 				}
 			}
-			if(succesfulHeal) return;
+			if(succesfulHeal){
+				event.cancel();
+				return;
+			}
 		}
 
 		if(<ore:petAnalyzeTool> has event.item){
-			event.player.sendChat(game.localize("mce.petbuff.message.info_start")
-				.replace("%s", pet.customName == "" ? pet.displayName : pet.customName +" ("+ game.localize("entity."+ pet.definition.name +".name") +")")
+			event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.petbuff.message.info_start", [
+					pet.customName == "" ? pet.displayName : pet.customName +" ("+ ITextComponent.fromTranslation("entity."+ pet.definition.name +".name").formattedText +")"
+				])
 			);
 			//mce.petbuff.message.info_line_base=%a (%v): Increase using %i (%t/%m)
 			for attribute,item in boostingItemsMap[pet.definition.id] {
-				event.player.sendChat(
-					game.localize("mce.petbuff.message.info_line_base")
-						.replace("%a", game.localize("attribute.name."+ attribute))
-						.replace("%v", "§d"+ (pet.getAttribute(attribute).attributeValue != 1.401298464324817E-45 ? pet.getAttribute(attribute).attributeValue as string : "0.0") +"§r")
-						.replace("%i", "§6"+ game.localize(item.name +".name") +"§r")
-						.replace("%t", "§d"+ getTrackerValue(pet, attribute) as string +"§r")
-						.replace("%m", "§6"+ item.amount as string +"§r")
+				event.player.sendRichTextMessage(
+					ITextComponent.fromTranslation("mce.petbuff.message.info_line_base", [
+						ITextComponent.fromTranslation("attribute.name."+ attribute).formattedText,
+						"§d"+ (pet.getAttribute(attribute).attributeValue != 1.401298464324817E-45 ? pet.getAttribute(attribute).attributeValue as string : "0.0") +"§r",
+						"§6"+ ITextComponent.fromTranslation(item.name +".name").formattedText +"§r",
+						"§d"+ getTrackerValue(pet, attribute) as string +"§r",
+						"§6"+ item.amount as string + "§r"
+					])
 				);
 			}
 			if(!isNull(gigaHealingItems[pet.definition.id]))
 				for entry,amount in gigaHealingItems[pet.definition.id] {
-					event.player.sendChat(
-						//mce.petbuff.message.info_healing_items_base=Can be healed using %i (%a%)
-						game.localize("mce.petbuff.message.info_healing_items_base")
-							.replace("%i", "§6"+ game.localize(entry.name +".name") +"§r")
-							.replace("%a", "§d"+ (amount * 100) +"%§r")
+					//mce.petbuff.message.info_healing_items_base=Can be healed using %s (%s)
+					event.player.sendRichTextMessage(
+						ITextComponent.fromTranslation("mce.petbuff.message.info_healing_items_base", [
+							"§6"+ ITextComponent.fromTranslation(entry.name +".name").formattedText +"§r",
+							"§d"+ (amount * 100) +"%§r"
+						])
 					);
 				}
 
 			event.player.setCooldown(event.item, 20);
+			event.cancel();
 			return;
 		}
 
@@ -205,6 +208,7 @@ events.onPlayerInteractEntity(function(event as crafttweaker.event.PlayerInterac
 		}
 		if(successfulModify){
 			if(!event.player.creative) event.item.mutable().shrink(1);
+			event.cancel();
 		}
 		if(debugBuffSystem) print("");
 	}
