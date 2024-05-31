@@ -3,7 +3,7 @@ import mods.roots.RunicShears;
 
 #MC Eternal Scripts
 
-print("--- loading .zs ---");
+print("--- loading roots.zs ---");
 
 //Unify Roots Flour recipe
 Mortar.removeRecipe(<roots:flour>);
@@ -21,4 +21,4 @@ RunicShears.addEntityRecipe("mce_shiny_scales_from_hippocampus", <iceandfire:shi
 
 //Runic Shearing end
 
-print("--- .zs initialized ---");
+print("--- roots.zs initialized ---");

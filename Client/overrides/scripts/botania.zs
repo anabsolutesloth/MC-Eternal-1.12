@@ -3,10 +3,11 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.recipes.ICraftingInfo;
 
 import mods.botania.ManaInfusion;
+import mods.botania.Orechid;
 
 #MC Eternal Scripts
 
-print("--- loading .zs ---");
+print("--- loading botania.zs ---");
 
 
 //Fabulous a Mana Pool
@@ -25,7 +26,17 @@ recipes.addShaped("mce_change_forest_wand_petals", <botania:twigwand>.withLore([
 });
 
 
+//Remove Beneath ores from Orechid
+Orechid.removeOre("oreOsmium");
+Orechid.removeOre("oreBoron");
+Orechid.removeOre("oreLithium");
+Orechid.removeOre("oreMagnesium");
+
+//Add Thorium to orechid
+Orechid.addOre("oreThorium", 1200);
+
+
 //Die Fragment Scrapping
 ManaInfusion.addInfusion(manaResource.gaiaSpirit, <contenttweaker:die_fragment>, 2500);
 
-print("--- .zs initialized ---");
+print("--- botania.zs initialized ---");

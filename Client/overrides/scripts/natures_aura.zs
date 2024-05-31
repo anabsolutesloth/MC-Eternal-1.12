@@ -3,7 +3,7 @@ import mods.roots.Mortar;
 
 #MC Eternal Scripts
 
-print("--- loading .zs ---");
+print("--- loading natures_aura.zs ---");
 
 //Altar of Birthing
 
@@ -95,4 +95,4 @@ AnimalSpawner.addRecipe("mce_mysticalworld_clam", "mysticalworld:entity_clam", 4
 // enforced in challenge mode
 Mortar.addRecipe("mce_gold_powder_in_roots_mortar", <naturesaura:gold_powder> *2, [<naturesaura:gold_leaf>]);
 
-print("--- .zs initialized ---");
+print("--- natures_aura.zs initialized ---");

@@ -1,4 +1,8 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.recipes.ICraftingInfo;
+import crafttweaker.player.IPlayer;
+
 #packmode classic
 #MC Eternal Scripts
 

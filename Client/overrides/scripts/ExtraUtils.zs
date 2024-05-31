@@ -49,7 +49,7 @@ recipes.addShaped(<extrautils2:angelring>, [
 recipes.addShaped("mce_kikoku", <extrautils2:lawsword>, [
     [getTconPart("largeblade", "nihilite")],
     [<extrautils2:opinium:8>],
-    [kikokuStick]
+    [<contenttweaker:kikoku_stick>]
 ]);
 
 #Chicken Wing Ring
