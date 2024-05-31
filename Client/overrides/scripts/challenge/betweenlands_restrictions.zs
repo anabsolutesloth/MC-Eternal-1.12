@@ -4,18 +4,23 @@ import crafttweaker.event.EntityTravelToDimensionEvent;
 import crafttweaker.event.EntityLivingEquipmentChangeEvent;
 import crafttweaker.event.PlayerOpenContainerEvent;
 import crafttweaker.event.EntityLivingDamageEvent;
+import crafttweaker.event.PlayerTickEvent;
+import crafttweaker.event.ITickEvent;
 import crafttweaker.events.IEventManager;
+import crafttweaker.text.ITextComponent;
 
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntity;
 import crafttweaker.entity.IEntityDefinition;
+import crafttweaker.entity.Attribute;
+import crafttweaker.entity.AttributeModifier;
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 
 #MC Eternal Scripts
 
-print("--- loading challenge/ChallengemodeBetweenlandsRestrictions.zs ---");
+print("--- loading challenge/betweenlands_restrictions.zs ---");
 
 static scriptDebug as bool = false;
 /*
@@ -55,10 +60,9 @@ function baubleCheck (player as IPlayer) as bool {
 }
 
 function itemCheck (stack as IItemStack) as bool {
-    if(!isNull(stack) && !(stack.definition.owner == "thebetweenlands" || stack.definition.id == "tombstone:grave_key")){
-        if(scriptDebug) print("Item");
+    if(!isNull(stack) && (stack.definition.owner == "thebetweenlands" || stack.definition.id == "tombstone:grave_key"))
         return false;
-    }
+    if(scriptDebug) print("Failed itemCheck on: "+ stack.commandString);
     return true;
 }
 
@@ -113,8 +117,8 @@ events.onEntityTravelToDimension(function(event as EntityTravelToDimensionEvent)
             if(scriptDebug) print("Can "+ player.name +" go to The Betweenlands?: "+ isAllowedBetween);
 
             if(!isAllowedBetween){
-                player.sendChat(game.localize("mce.challengemode.betweenlands_restrictions.denied_entry_message.1"));
-                player.sendChat(game.localize("mce.challengemode.betweenlands_restrictions.denied_entry_message.2"));
+                player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.betweenlands_restrictions.denied_entry_message.1"));
+                player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.betweenlands_restrictions.denied_entry_message.2"));
                 if(scriptDebug) print(player.name +" attempted travel to The Betweenlands, but was rejected due to having disallowed Items.");
                 event.cancel();
             }
@@ -144,16 +148,12 @@ events.onEntityLivingEquipmentChange(function(event as EntityLivingEquipmentChan
     }
 });
 
-//Multiplies damage by factor of the player's health above 20, so that you can't just have 9000 health and ignore dying.
-// i might make a healing one, but it may have complications with non-BL healing sources.
 events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
     if(!event.entity.world.remote && event.entity.dimension == betweenlandsID){
+
         if(scriptDebug) print("Starting Damage: "+ event.amount);
         if(event.entity instanceof IPlayer){
             val player as IPlayer = event.entity;
-            val playerHealthFactor as float = player.health / 20;
-            event.amount *= playerHealthFactor;
-            if(scriptDebug) print("Damage after Health Factor adjustment: "+ event.amount);
             /*
             if(!(event.damageSource.trueSource instanceof IPlayer) && event.damageSource.trueSource.definition.id.split(":")[0] == "thebetweenlands"){
                 var currentMin = damageLimits[event.damageSource.trueSource.definition] as float;
@@ -201,10 +201,53 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
         }
     }
 });
+
+//Modifier UUID for health clamp attribute
+static decayHPUUID as string = "3cdcc970-7d9e-4b89-8290-e4ebb02a0a36";
+
+//Betweenlands' Decay Health Modifier UUID
+// taken from Betweenlands source code at "thebetweenlands.common.handler.PlayerDecayHandler"
+static BLDecayHPUUID as string = "033f5f10-67b3-42f3-8511-67a575fbb099";
+
+//force max health to 20 in betweenlands
+events.onPlayerTick(function(event as PlayerTickEvent){
+    //*
+    if(!event.player.world.remote && event.player.world.time % 20 == 0 && event.phase == "START"){
+        val healthAttribute = event.player.getAttribute("generic.maxHealth");
+
+        //remove modifier outside of betweenlands
+        if(event.player.dimension != betweenlandsID){
+            if(!isNull(healthAttribute.getModifier(decayHPUUID)))
+                healthAttribute.removeModifier(decayHPUUID);
+            return;
+        }
+
+        val BLDecayAmount = !isNull(healthAttribute.getModifier(BLDecayHPUUID)) ? healthAttribute.getModifier(BLDecayHPUUID).getAmount() : 0.0;
+        val currentModifier as double = !isNull(healthAttribute.getModifier(decayHPUUID)) ? healthAttribute.getModifier(decayHPUUID).getAmount() : 0.0;
+        val amount = ((20.0 - event.player.maxHealth) + currentModifier + BLDecayAmount) as double;
+
+        if(scriptDebug){
+            print("health already removed by Decay: "+ BLDecayAmount);
+            print("current health reduction: "+ currentModifier);
+            print("calculated amount to remove: "+ amount);
+        }
+
+        //return if calculation is identical
+        //removing and then reapplying the modifer is an unecessary operation
+        if(amount == currentModifier) return;
+
+        //update modifier with new amount
+        if(!isNull(healthAttribute.getModifier(decayHPUUID)))
+            healthAttribute.removeModifier(decayHPUUID);
+        healthAttribute.applyModifier(AttributeModifier.createModifier("MCE - Betweenlands Challenge Mode Health Reduction", amount, 0, decayHPUUID));
+    }
+    //*/
+});
+
 /*
 events.onPlayerOpenContainer(function(event as PlayerOpenContainerEvent){
     print(event.container as string);
 });
 */
 
-print("--- challenge/ChallengemodeBetweenlandsRestrictions.zs initialized ---");
+print("--- challenge/betweenlands_restrictions.zs initialized ---");

@@ -6,11 +6,13 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.appliedenergistics2.Inscriber;
 
+import mods.buildcraft.AssemblyTable;
+
 import mods.immersiveengineering.Blueprint;
 
 #MC Eternal scripts
 
-print("--- loading challenge/ChallengemodeAE2.zs ---");
+print("--- loading challenge/ae2.zs ---");
 
 //Challenge mode invoke of this function
 scripts.AE2.redoInscriber({
@@ -20,7 +22,9 @@ scripts.AE2.redoInscriber({
 		"Sil" : <ore:itemSilicon>
   } as IIngredient[string], 
   {
-    <ore:dustTriberium>: 1
+    <ore:dustTriberium>: 1, //TAIGA Triberium Dust
+    <mekanism:controlcircuit:1>: 2, //Mek Advanced Circuit
+    <advancedrocketry:ic:2>: 3 //AR Advanced Circuit
   },
   <ore:blockIron>
 );
@@ -88,27 +92,27 @@ addUniversalAlloyRecipe(AEMaterials["vibrantQuartzGlass"], [AEMaterials["quartzG
 recipes.remove(AEMaterials["1kComponent"]);
 recipes.addShaped("mce_challengemode_1k_storage_component", AEMaterials["1kComponent"], [
     [<ore:dustEnergetic>, <ore:gemChargedCertusQuartz>, <ore:dustEnergetic>],
-    [<ore:crystalPureCertusQuartz>, AEMaterials.logicCircuit, <ore:crystalPureCertusQuartz>],
+    [<ore:crystalPureCertusQuartz>, AEMaterials.circuitLogic, <ore:crystalPureCertusQuartz>],
     [<ore:dustEnergetic>, <ore:gemChargedCertusQuartz>, <ore:dustEnergetic>]
 ]);
 
 recipes.remove(AEMaterials["4kComponent"]);
 recipes.addShaped("mce_challengemode_4k_storage_component", AEMaterials["4kComponent"], [
-    [<ore:dustTiberium>, AEMaterials.calcCircuit, <ore:dustTiberium>],
+    [<ore:dustTiberium>, AEMaterials.circuitCalc, <ore:dustTiberium>],
     [AEMaterials["1kComponent"], AEMaterials.quartzGlass, AEMaterials["1kComponent"]],
     [<ore:dustTiberium>, AEMaterials["1kComponent"], <ore:dustTiberium>]
 ]);
 
 recipes.remove(AEMaterials["16kComponent"]);
 recipes.addShaped("mce_challengemode_16k_storage_component", AEMaterials["16kComponent"], [
-    [<ore:dustTriberium>, AEMaterials.calcCircuit, <ore:dustTriberium>],
+    [<ore:dustTriberium>, AEMaterials.circuitCalc, <ore:dustTriberium>],
     [AEMaterials["4kComponent"], AEMaterials.vibrantQuartzGlass, AEMaterials["4kComponent"]],
     [<ore:dustTriberium>, AEMaterials["4kComponent"], <ore:dustTriberium>]
 ]);
 
 recipes.remove(AEMaterials["64kComponent"]);
 recipes.addShaped("mce_challengemode_64k_storage_component", AEMaterials["64kComponent"], [
-    [<ore:dustTriberium>, AEMaterials.engCircuit, <ore:dustTriberium>],
+    [<ore:dustTriberium>, AEMaterials.circuitEng, <ore:dustTriberium>],
     [AEMaterials["16kComponent"], AEMaterials.vibrantQuartzGlass, AEMaterials["16kComponent"]],
     [<ore:dustTriberium>, AEMaterials["16kComponent"], <ore:dustTriberium>]
 ]);
@@ -126,7 +130,7 @@ recipes.addShaped("mce_challengemode_inscriber", <appliedenergistics2:inscriber>
 recipes.remove(<ae2stuff:inscriber>);
 recipes.addShaped("mce_challengemode_adv_inscriber", <ae2stuff:inscriber>, [
     [<ore:plateMagnalium>, <enderio:block_buffer:0>, <ore:plateMagnalium>],
-    [AEMaterials.engCircuit, <appliedenergistics2:inscriber>, <mekanism:controlcircuit:1>],
+    [AEMaterials.circuitEng, <appliedenergistics2:inscriber>, <mekanism:controlcircuit:1>],
     [<ore:plateIridium>, <ore:plateMagnalium>, <ore:plateIridium>]
 ]);
 
@@ -141,7 +145,7 @@ recipes.addShaped("mce_challengemode_crystal_growth_chamber", <ae2stuff:grower>,
 //Molecular Assembler
 recipes.remove(<appliedenergistics2:molecular_assembler>);
 Blueprint.addRecipe("matter_engineering", <appliedenergistics2:molecular_assembler>, [
-    <ore:plateSteel> *4,
+    <ore:plateSteel> *4, //to be changed to a thermal Hardened Cell Frame
     AEMaterials.vibrantQuartzGlass *2,
     AEMaterials.coreFormation,
     AEMaterials.coreAnnihil,
@@ -150,16 +154,26 @@ Blueprint.addRecipe("matter_engineering", <appliedenergistics2:molecular_assembl
 
 //Matter Engineering Blueprint
 recipes.addShaped("mce_challengemode_matter_engineering_blueprint", <immersiveengineering:blueprint>.withTag({blueprint: "matter_engineering"}), [
-    [<ore:itemQuartzWrench>, AEMaterials.engCircuit, <openblocks:generic:11>],
+    [<ore:itemQuartzWrench>, AEMaterials.circuitEng, <openblocks:generic:11>],
     [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>],
     [<minecraft:paper>, <minecraft:paper>, <minecraft:paper>]
 ]);
 
 //Form and Annihil cores
 recipes.remove(AEMaterials.coreFormation);
-Blueprint.addRecipe("matter_engineering", AEMaterials.coreFormation *2, [AEMaterials.logicCircuit, <ore:crystalPureCertusQuartz>, <ore:dustFluix>, <ore:plateInvar>]);
+Blueprint.addRecipe("matter_engineering", AEMaterials.coreFormation *2, [AEMaterials.circuitLogic, <ore:crystalPureCertusQuartz>, <ore:dustFluix>, <ore:plateInvar>]);
 
 recipes.remove(AEMaterials.coreAnnihil);
-Blueprint.addRecipe("matter_engineering", AEMaterials.coreAnnihil *2, [AEMaterials.logicCircuit, <ore:crystalPureNetherQuartz>, <ore:dustFluix>, <ore:plateInvar>]);
+Blueprint.addRecipe("matter_engineering", AEMaterials.coreAnnihil *2, [AEMaterials.circuitLogic, <ore:crystalPureNetherQuartz>, <ore:dustFluix>, <ore:plateInvar>]);
+
+
+//Crystal Growth Accelerators
+recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
+AssemblyTable.addRecipe("mce_challengemode_crystal_growth_accelerator", <appliedenergistics2:quartz_growth_accelerator>, 7500, [
+    <appliedenergistics2:fluix_block>,
+    AEMaterials.quartzGlass *2,
+    <ore:scaffoldingAluminum>
+]);
+
 
 print("--- challenge/ChallengemodeAE2.zs initialized ---");
