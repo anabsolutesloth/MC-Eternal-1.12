@@ -1,6 +1,7 @@
 import crafttweaker.events.IEventManager;
 import crafttweaker.player.IPlayer;
 import crafttweaker.formatting.IFormattedText;
+import crafttweaker.text.ITextComponent;
 
 events.onEntityTravelToDimension(function(event as crafttweaker.event.EntityTravelToDimensionEvent){
 	if(!event.entity.world.isRemote() && event.entity instanceof IPlayer){

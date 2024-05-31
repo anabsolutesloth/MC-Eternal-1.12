@@ -65,4 +65,19 @@ recipes.addShaped("flying_squid_ring_mce", <extrautils2:chickenring:1>, [
     [<xreliquary:kraken_shell>, <extrautils2:chickenring>, <inventorypets:squid_pet>],
     [<mysticalworld:epic_squid>, <roots:spell_dust>.withTag({spell_storage: {s: "roots:spell_sky_soarer"}}), <mysticalworld:epic_squid>]
 ]);
+
+
+//Craft EU2 Moonstone with Moon Turf
+recipes.addShaped("mce_moonstone_from_moon_turf_with_diamond", <extrautils2:ingredients:5> *3, [
+	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>],
+	[<ore:turfMoon>, <ore:gemDiamond>, <ore:turfMoon>],
+	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>]
+]);
+
+recipes.addShaped("mce_moonstone_from_moon_turf_with_unstable_ingot", <extrautils2:ingredients:5> * 18, [
+	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>],
+	[<ore:turfMoon>, <ore:ingotUnstable>, <ore:turfMoon>],
+	[<ore:turfMoon>, <ore:turfMoon>, <ore:turfMoon>]
+]);
+
 print("--- ExtrUtils.zs initialized ---");

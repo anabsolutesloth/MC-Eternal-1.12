@@ -24,26 +24,11 @@ function redoInscriber(circuitMaterialMap as IIngredient[string], conductive as 
 		"circuit"
 	] as string[];
 
-	// remembering magic numbers is annoying and dumb
-	val AEMaterials = {
-		"printEng"		: <appliedenergistics2:material:17>,
-		"printCalc"		: <appliedenergistics2:material:16>,
-		"printLogic"	: <appliedenergistics2:material:18>,
-		"printSil"		: <appliedenergistics2:material:20>,
-		"pressEng"		: <appliedenergistics2:material:14>,
-		"pressCalc"		: <appliedenergistics2:material:13>,
-		"pressLogic"	: <appliedenergistics2:material:15>,
-		"pressSil"		: <appliedenergistics2:material:19>,
-		"circuitEng"	: <appliedenergistics2:material:24>,
-		"circuitCalc"	: <appliedenergistics2:material:23>,
-		"circuitLogic"	: <appliedenergistics2:material:22>
-	} as IItemStack[string];
-
 	// Yeet the not functioning recipes
 	for circuitType,material in circuitMaterialMap {
 		for type in types {
 			if(type+circuitType != "circuitSil"){
-				Inscriber.removeRecipe(AEMaterials[type+circuitType]);
+				Inscriber.removeRecipe(AEMaterials[type + circuitType]);
 			}
 		}
 		// Press Copying

@@ -1,3 +1,5 @@
+#priority 4
+
 #MC Eternal Scripts
 
 print("--- loading Oredict.zs ---");
@@ -42,6 +44,7 @@ print("--- loading Oredict.zs ---");
 
 <ore:oreMozzarellium>.add(<libvulpes:ore0:0>);
 <ore:dustMozzarellium>.add(<libvulpes:productdust:0>);
+<ore:wireGold>.add(<icbmclassic:wire:1>);
 
 #Atum Relics (relicItemAtum)
 
