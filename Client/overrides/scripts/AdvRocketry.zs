@@ -40,7 +40,7 @@ for items in removerecipes {
 //Station Assembler
 recipes.addShaped("mce_station_assembler", <advancedrocketry:stationbuilder>, [
 	[<advancedrocketry:ic:2>, <rats:arcane_technology>, <advancedrocketry:ic:2>],
-	[<ore:dustDilithium>, <stevescarts:upgrade:5>, <libvulpes:productdust>],
+	[<libvulpes:productdust>, <stevescarts:upgrade:5>, <libvulpes:productdust>],
 	[<advancedrocketry:ic:2>, <ore:componentEVCapacitor>, <advancedrocketry:ic:2>]
 ]);
 
@@ -68,7 +68,7 @@ recipes.addShaped("mce_rocket_assembler", <advancedrocketry:rocketbuilder>, [
 
 //Electric Arc Furnace
 // now with more overpoweredness!
-recipes.addShaped("mce_heatproof_brick", <advancedrocketry:blastbrick> *2, [
+recipes.addShaped("mce_heatproof_brick", <advancedrocketry:blastbrick> *6, [
 	[<iceandfire:dragonforge_ice_brick>, <ore:dustAdamant>, <iceandfire:dragonforge_fire_brick>],
 	[<mekanismgenerators:reactor:1>, <nuclearcraft:rad_shielding:2>, <mekanismgenerators:reactor:1>],
 	[<iceandfire:dragonforge_fire_brick>, <techreborn:part:14>, <iceandfire:dragonforge_ice_brick>]
@@ -77,7 +77,7 @@ recipes.addShaped("mce_heatproof_brick", <advancedrocketry:blastbrick> *2, [
 recipes.addShaped("mce_electric_arc_furnace", <advancedrocketry:arcfurnace>, [
 	[null, <advancedrocketry:misc:0>, null],
 	[<iceandfire:dragonforge_ice_core_disabled>, <advancedrocketry:ic:3>, <iceandfire:dragonforge_fire_core_disabled>],
-	[<advancedrocketry:blastbrick>, <advancedrocketry:ic:4>, <advancedrocketry:blastbrick>]
+	[<ore:blockFireDragonsteel>, <advancedrocketry:ic:4>, <ore:blockIceDragonsteel>]
 ]);
 
 
@@ -127,17 +127,10 @@ recipes.addShaped("mce_ar_pressurized_tank_block", <advancedrocketry:liquidtank>
 	[<libvulpes:structuremachine>, <openblocks:tank>, <libvulpes:structuremachine>]
 ]);
 
-#Space Dimension Tooltips
-var ohnoeffort = {
-	<erebus:gaean_keystone> : "advancement.erebus.exploration.root",
-	<erebus:portal_activator> : "advancement.erebus.exploration.root",
-	<atum:scarab> : "itemGroup.atum",
-	<theaurorian:aurorianportalframebricks> : "itemGroup.theaurorian"
-} as string[IItemStack];
 
-for usualobjects in ohnoeffort {
-	usualobjects.addTooltip(format.red(game.localize("mce.advrocketry.message.get_there_with_rocket.1").replace("%s", game.localize(ohnoeffort[usualobjects]))));
-	usualobjects.addTooltip(format.red(game.localize("mce.advrocketry.message.get_there_with_rocket.2")));
-}
+//Fully separating Mozzarellium
+recipes.removeByRecipeName("thermalfoundation:productgem");
+mods.immersiveengineering.Crusher.removeRecipe(<libvulpes:productgem:0>);
+
 
 print("--- AdvRocketry.zs initialized ---");	

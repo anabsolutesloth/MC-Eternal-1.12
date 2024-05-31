@@ -49,7 +49,7 @@ val damageLimits as float[IEntityDefinition] = {
 };
 */
 
-val betweenlandsID = 20;
+static betweenlandsID as int = 20;
 
 function baubleCheck (player as IPlayer) as bool {
     if(player.nbt.ForgeCaps.asMap()["baubles:container"].Items.length != 0){
@@ -68,7 +68,10 @@ function itemCheck (stack as IItemStack) as bool {
 
 function doEquipmentDrop (stack as IItemStack, slot as IEntityEquipmentSlot, player as IPlayer) as void {
         if(scriptDebug) print(player.name +" tried to hold "+ stack.commandString +" in The Betweenlands, it has been forcibly dropped due to Challenge Mode restrictions");
-        val itemEntity = stack.createEntityItem(player.world, player.posX as int, player.posY as int + 3, player.posZ as int);
+        val itemEntity = stack.createEntityItem(player.world, player.position);
+        itemEntity.posX = player.posX;
+        itemEntity.posY = player.posY + 3.0;
+        itemEntity.posZ = player.posZ;
         itemEntity.motionY = 0.3;
         player.world.spawnEntity(itemEntity);
         player.setItemToSlot(slot, null);
@@ -153,6 +156,7 @@ events.onEntityLivingDamage(function(event as EntityLivingDamageEvent){
 
         if(scriptDebug) print("Starting Damage: "+ event.amount);
         if(event.entity instanceof IPlayer){
+            
             val player as IPlayer = event.entity;
             /*
             if(!(event.damageSource.trueSource instanceof IPlayer) && event.damageSource.trueSource.definition.id.split(":")[0] == "thebetweenlands"){
