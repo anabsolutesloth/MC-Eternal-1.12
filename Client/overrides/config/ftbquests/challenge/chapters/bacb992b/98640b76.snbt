@@ -1,0 +1,80 @@
+{
+	x: -1.0d,
+	y: 5.5d,
+	description: "&oUse the Red Chain to bind the world once more.",
+	text: [
+		"Red String can be used to craft &bRed Stringed Devices&r, which are capable of acting as a proxy for a block infront of them a short distance away which supports what they do.",
+		"",
+		"The &6Container&r will bind to most blocks with an inventory, allow inputting to the bound block remotely from the Container.",
+		"",
+		"The &6Dispenser&r will only bind to &bDispensers or Droppers&r, but any signal given to the Stringed Dispenser will activate the bound block.",
+		"It will also accept items for the bound block, just like the Container.",
+		"",
+		"The &6Nutrifier&r will bind to any block that can have &bBone Meal&r used on it, and redirect any uses of Bone Meal on itself to the bound block.",
+		"",
+		"The &6Comparator&r will bind to any block that can be read by a &bRedstone Comparator&r, and will allow accessing that block's Comparator output remotely, by using Comparators on the Stringed Comparator.",
+		"",
+		"The &6Spoofer&r will bind to many regular Flower blocks, and will also allow any &bFunctional or Generating&r Flowers to be placed ontop of the Spoofer, moving their Area of Effect's origin to the bound block.",
+		"It's a strange one with niche uses, but a very interesting one.",
+		"",
+		"The &6Interceptor&r can be bound to any interactable block, and will emit a &cRedstone Pulse&r when the bound block is interacted with."
+	],
+	min_required_dependencies: 1,
+	dependencies: [
+		"770da9dd",
+		"9c24e745"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c09ac331",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:manaresource",
+			Damage: 12s
+		}]
+	},
+	{
+		uid: "ed913bb0",
+		type: "item",
+		title: "Any &6Red Stringed Device",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringcontainer"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringdispenser"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringfertilizer"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringcomparator"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringrelay"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:redstringinterceptor"
+		}]
+	}]
+}

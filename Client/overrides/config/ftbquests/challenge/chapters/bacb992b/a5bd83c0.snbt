@@ -1,0 +1,22 @@
+{
+	title: "Pyre",
+	x: 1.0d,
+	y: 0.0d,
+	dependencies: [
+		"48eba204"
+	],
+	tasks: [{
+		uid: "51e01e61",
+		type: "observation",
+		title: "Look at a &6Pyre",
+		icon: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "roots:pyre"
+		},
+		match_type: "block_id",
+		match: "roots:pyre",
+		timer: 0L
+	}]
+}

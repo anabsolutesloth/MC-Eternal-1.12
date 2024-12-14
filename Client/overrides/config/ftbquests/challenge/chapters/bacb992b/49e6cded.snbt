@@ -1,0 +1,19 @@
+{
+	title: "Tier 2 Blood Altar",
+	x: 2.5d,
+	y: 5.5d,
+	dependencies: [
+		"4d6d06c1",
+		"75c2a7ab"
+	],
+	tasks: [{
+		uid: "53e0ceaf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "bloodmagic:blood_rune"
+		}]
+	}]
+}

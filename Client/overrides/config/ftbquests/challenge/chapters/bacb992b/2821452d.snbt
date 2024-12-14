@@ -1,0 +1,18 @@
+{
+	x: 1.5d,
+	y: -7.0d,
+	description: "&c1000/t RF/FE&7 transfer that you'll be needing to craft anyway. Has minor loss over distance.",
+	dependencies: [
+		"0c48f45d"
+	],
+	tasks: [{
+		uid: "e7e6c437",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "actuallyadditions:block_laser_relay"
+		}]
+	}]
+}

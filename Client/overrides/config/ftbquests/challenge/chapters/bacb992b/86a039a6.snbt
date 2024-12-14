@@ -1,0 +1,66 @@
+{
+	x: -1.5d,
+	y: -5.0d,
+	description: "&6Seared Bricks&7 can be crafted quickly with new recipes in the &6Pyre&7 or &6Alloy Smelter&7.",
+	tasks: [{
+		uid: "dd14ae30",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:smeltery_controller"
+		}]
+	},
+	{
+		uid: "62fe82bb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:seared_tank"
+		}]
+	},
+	{
+		uid: "6497c019",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:smeltery_io"
+		}]
+	},
+	{
+		uid: "5b45d1b9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:faucet"
+		}]
+	},
+	{
+		uid: "d0ca5b18",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:casting"
+		}]
+	},
+	{
+		uid: "cbf5266a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:casting",
+			Damage: 1s
+		}]
+	}]
+}

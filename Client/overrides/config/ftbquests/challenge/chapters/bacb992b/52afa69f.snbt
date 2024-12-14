@@ -1,0 +1,16 @@
+{
+	x: 6.0d,
+	y: 2.5d,
+	tasks: [{
+		uid: "d7c64c9a",
+		type: "dimension",
+		title: "Visit &4The Midnight",
+		icon: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "midnight:dark_pearl"
+		},
+		dim: -23
+	}]
+}

@@ -1,0 +1,57 @@
+{
+	title: "Simple Storage Network",
+	x: -4.5d,
+	y: 1.5d,
+	description: "Starting-out Organization",
+	text: [
+		"SSN's Capabilities are severely limited in Challenge mode to make way for other Storage System options, but it can still be used to help get organized when starting out."
+	],
+	optional: true,
+	tasks: [{
+		uid: "b77b2421",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "storagenetwork:master"
+		}]
+	},
+	{
+		uid: "f47dfacb",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "storagenetwork:request"
+		}]
+	},
+	{
+		uid: "850af090",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "storagenetwork:kabel"
+		}]
+	},
+	{
+		uid: "b46270b3",
+		type: "item",
+		title: "&6Simple Cable&r or &6Storage Link Cable&r",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "storagenetwork:simple_kabel"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "storagenetwork:storage_kabel"
+		}]
+	}]
+}

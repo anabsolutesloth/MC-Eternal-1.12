@@ -1,0 +1,17 @@
+{
+	x: -0.5d,
+	y: 1.0d,
+	dependencies: [
+		"48eba204"
+	],
+	tasks: [{
+		uid: "5cce0fd9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "thaumcraft:crucible"
+		}]
+	}]
+}

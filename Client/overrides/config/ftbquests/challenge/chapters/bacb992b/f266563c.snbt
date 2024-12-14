@@ -1,0 +1,36 @@
+{
+	x: 2.5d,
+	y: -7.0d,
+	text: [
+		"When the Battery given to them is set to Discharge, or the &6Battery Box&r is given a &cRedstone Signal&r, it can connect with up to 15 others that are adjacent, and share its power with them!"
+	],
+	dependencies: [
+		"2821452d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cdd810ce",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "actuallyadditions:block_battery_box"
+		}]
+	},
+	{
+		uid: "87fe695f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "actuallyadditions:item_battery",
+			tag: {
+				Energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

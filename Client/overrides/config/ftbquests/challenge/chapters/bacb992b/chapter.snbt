@@ -1,0 +1,14 @@
+{
+	title: "{mce.questing.chapter.challenge_mode.name}",
+	icon: {
+		ForgeCaps: {
+			"wizardryutils:summoneditemdata": {},
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
+		id: "biomesoplenty:jar_filled",
+		Damage: 1s
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

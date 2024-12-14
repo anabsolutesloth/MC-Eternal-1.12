@@ -1,0 +1,36 @@
+{
+	x: -0.5d,
+	y: 2.0d,
+	text: [
+		"Craft &6Hydroangeas&r using a Crucible, or progress into Tech and explore to make a &6Thermalily&r!"
+	],
+	min_required_dependencies: 1,
+	dependencies: [
+		"7b17ea82",
+		"35b9a2c4"
+	],
+	tasks: [{
+		uid: "cda55837",
+		type: "item",
+		title: "&6Hydroangeas&r or &6Thermalily&r",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:specialflower",
+			tag: {
+				type: "hydroangeas"
+			}
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:specialflower",
+			tag: {
+				type: "thermalily"
+			}
+		}],
+		ignore_nbt: 2b
+	}]
+}

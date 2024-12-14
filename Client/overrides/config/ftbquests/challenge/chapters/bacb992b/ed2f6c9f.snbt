@@ -1,0 +1,80 @@
+{
+	title: "System Storage",
+	x: -5.5d,
+	y: 3.5d,
+	description: "&o9/13, would use again",
+	text: [
+		"Containers that require a small amount of &cRF/FE&r, and have no interface of their own, but are exceptionally large.",
+		"Perfect to use as primary storage for your storage network.",
+		"",
+		"- Tiny: &b81&r slots",
+		"- Small: &b108&r slots",
+		"- Medium &b135&r slots",
+		"- Big: &b162&r slots",
+		"- Large: &b216&r slots",
+		"- Huge: &b270&r slots",
+		"- Enormous: &b351&r slots",
+		"- Warehouse: &b432&r slots",
+		"- EX Warehouse: &b540&r slots"
+	],
+	optional: true,
+	tasks: [{
+		uid: "eebf1c31",
+		type: "item",
+		title: "Any &6System Storage",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_tiny"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_small"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_medium"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_big"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_large"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_huge"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_enormous"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_warehouse"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_chest_warehouse13"
+		}]
+	}]
+}

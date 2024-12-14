@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	dependencies: [
+		"496bf79d"
+	],
+	tasks: [{
+		uid: "d580eec4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "bloodmagic:altar"
+		}]
+	}]
+}

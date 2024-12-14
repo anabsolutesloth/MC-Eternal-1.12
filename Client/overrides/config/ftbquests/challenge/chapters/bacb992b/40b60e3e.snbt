@@ -1,0 +1,24 @@
+{
+	x: 5.5d,
+	y: -6.0d,
+	tasks: [{
+		uid: "b367a08e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "forestry:carpenter"
+		}]
+	},
+	{
+		uid: "bf3dd56b",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "forestry:fabricator"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: -1.5d,
+	tasks: [{
+		uid: "c4ed4f48",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "thaumcraft:salis_mundus"
+		}]
+	}]
+}

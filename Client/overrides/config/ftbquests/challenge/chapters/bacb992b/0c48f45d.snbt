@@ -1,0 +1,28 @@
+{
+	title: "Atomic Reconstructor",
+	x: 0.5d,
+	y: -6.0d,
+	description: "Explore or progress into Magic to get &6Manasteel&7 for the &6Mana Lens&7!",
+	text: [
+		"Alternatively, if you don't feel like making one, you might be able to find one somewhere in the world...",
+		"You'll need your own some day though..."
+	],
+	dependencies: [
+		"c48ef97e",
+		"8f8bc6b0"
+	],
+	tasks: [{
+		uid: "0f38e092",
+		type: "observation",
+		title: "Look at an &6Atomic Reconstructor",
+		icon: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "actuallyadditions:block_atomic_reconstructor"
+		},
+		match_type: "block_id",
+		match: "actuallyadditions:block_atomic_reconstructor",
+		timer: 0L
+	}]
+}

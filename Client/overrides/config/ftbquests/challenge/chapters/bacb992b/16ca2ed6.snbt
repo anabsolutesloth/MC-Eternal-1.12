@@ -1,0 +1,21 @@
+{
+	x: 4.5d,
+	y: 1.5d,
+	description: "Explore to find &6Crystal Silver&7",
+	dependencies: [
+		"96acff9b"
+	],
+	tasks: [{
+		uid: "3bc75656",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "bloodmagic:sacrificial_dagger",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}]
+}

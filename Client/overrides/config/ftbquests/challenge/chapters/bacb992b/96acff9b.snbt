@@ -1,0 +1,17 @@
+{
+	x: 2.5d,
+	y: 0.0d,
+	dependencies: [
+		"48eba204"
+	],
+	tasks: [{
+		uid: "d5a7efb6",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "thaumcraft:arcane_workbench"
+		}]
+	}]
+}

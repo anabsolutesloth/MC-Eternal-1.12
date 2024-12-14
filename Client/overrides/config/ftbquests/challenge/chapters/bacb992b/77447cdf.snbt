@@ -1,0 +1,18 @@
+{
+	x: -2.5d,
+	y: -5.5d,
+	text: [
+		"Craft &6Dried Bricks&r in a snap with a &6Pyre&r, or just let them dry slowly on &6Drying Racks&r"
+	],
+	tasks: [{
+		uid: "76cf5905",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:stone_decoration",
+			Damage: 10s
+		}]
+	}]
+}

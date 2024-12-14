@@ -1,0 +1,56 @@
+{
+	title: "Corporea Automata",
+	x: -3.0d,
+	y: 4.0d,
+	description: "&oThe Great 'Mate",
+	text: [
+		"These devices are some powerful ones, letting you do proper Automation with Corporea networks, in a robust way.",
+		"",
+		"&6Corporea Funnels&r will &dexectue a Request for the item set in an Item Frame on their side&r when give a &cRedstone Signal&r.",
+		"The &dRotation of the item in the frame&r will determine the amount requested, &omostly&r doubling, until it hits the limit of 64.",
+		"Funnels do have a short cooldown, so they can't be spammed.",
+		"",
+		"&6Corporea Interceptors&r are really cool, if a &dRequest for the item in an Item Frame on its side cannot be completely fulfilled&r, it will &demit a &cRedstone Pulse&r.",
+		"This can be used to trigger things when you run out of a certain item, input a specific keyword to your Corporea network, and maybe even more!",
+		"&bCrystal Cubes&d and &bFunnels&d can trigger it too&r, since they send &dRequests&r on the network!",
+		"",
+		"&6Corporea Retainers&r aren't their own thing, rather, they're an &dextension to an &bInterceptor&r, which will &dretain the information of the last Request that activated that Interceptor&r.",
+		"Since they need an Interceptor to work, they don't need their own Corporea Spark.",
+		"This retained information can be read by a &cRedstone Comparator&r in the same way as &bCorporea Crystal Cubes&r.",
+		"And if the Retainer is given a &cRedstone Signal&r, it will &drun the stored Request at its original position&r, which can allow you to do things like &dsend items that were autocrafted to the place that originally requested them&r."
+	],
+	dependencies: [
+		"bfb129a8"
+	],
+	optional: true,
+	tasks: [{
+		uid: "91b134c4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeafunnel"
+		}]
+	},
+	{
+		uid: "8d88788c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeainterceptor"
+		}]
+	},
+	{
+		uid: "dce63c61",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporearetainer"
+		}]
+	}]
+}

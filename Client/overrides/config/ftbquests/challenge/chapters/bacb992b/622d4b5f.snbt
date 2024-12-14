@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: -12.0d,
+	description: "Cutting right to the chase, no Crude Blast Furnace needed around here!",
+	text: [
+		"All Recipes also take 1/3rd the usual time in Challenge mode!"
+	],
+	dependencies: [
+		"487f544c"
+	],
+	tasks: [{
+		uid: "2f65cb20",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:stone_decoration",
+			Damage: 2s
+		}]
+	}]
+}

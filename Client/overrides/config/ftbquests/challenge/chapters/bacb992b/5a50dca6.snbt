@@ -1,0 +1,31 @@
+{
+	title: "Considerable MJ Production",
+	x: -0.5d,
+	y: -6.5d,
+	shape: "hexagon",
+	dependencies: [
+		"f8c2d174"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fbdc49d9",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "buildcraftfactory:distiller"
+		}]
+	},
+	{
+		uid: "069f7634",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "buildcraftcore:engine",
+			Damage: 2s
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -3.0d,
+	description: "&c640/t&7 (per connection)&c RF/FE&7 transfer that you can Recycle for better ones later.",
+	dependencies: [
+		"c48ef97e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7523cea4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:item_power_conduit"
+		}]
+	}]
+}

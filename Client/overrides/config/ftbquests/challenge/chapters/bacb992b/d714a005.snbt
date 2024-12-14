@@ -1,0 +1,16 @@
+{
+	x: -4.5d,
+	y: 6.0d,
+	description: "Imbue &6Wildwood Planks&7 with &rStarlight&7 to acquire &6Dreamwood Planks&7.",
+	tasks: [{
+		uid: "7cd6ada6",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:dreamwood",
+			Damage: 1s
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -0.5d,
+	y: 18.5d,
+	dependencies: [
+		"cfba2970"
+	],
+	tasks: [{
+		uid: "9180641f",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "roots:imposer"
+		}]
+	}]
+}

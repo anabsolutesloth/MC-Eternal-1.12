@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: 5.5d,
+	description: "Earlygame Autocrafting, have fun :)",
+	dependencies: [
+		"d714a005"
+	],
+	tasks: [{
+		uid: "2e5605cf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:opencrate",
+			Damage: 1s
+		}]
+	}]
+}
