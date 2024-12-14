@@ -7,6 +7,8 @@ desc.immersiveengineering.info.mineral.mooncheese=Lunar Cheese
 #Custom IE Blueprints
 desc.immersiveengineering.info.blueprint.enderio_components=Ender Engineering Components
 desc.immersiveengineering.info.blueprint.matter_engineering=Matter-Energy Components
+desc.immersiveengineering.info.blueprint.structural_engineering=Large-Scale Engineering
+desc.immersiveengineering.info.blueprint.techreborn_machine=Complex Archaic Machining
 
 #Quest Chapter Names
 mce.questing.chapter.introduction.name=Introduction
@@ -29,6 +31,7 @@ mce.questing.chapter.mystical_agriculture.name=Mystical Agriculture
 mce.questing.chapter.bosses.name=Bosses
 mce.questing.chapter.challenges.name=Challenges
 mce.questing.chapter.unlockables.name=Unlockables
+mce.questing.chapter.challenge_mode.name=Challenge Mode
 
 #Mod overrides
 enderio.darksteel.upgrade.empowered_one.tooltip.detailed.line2=$D% item damage absorbed by power
@@ -118,6 +121,7 @@ mce.generic.message.item_yeeted_from_exist=That item was illegal and has been ye
 mce.generic.tip.salis_mundus_craft.specific_mod_block=Acquired by sprinkling Salis Mundus on a %m %s
 mce.generic.tip.salis_mundus_craft=Acquired by sprinkling Salis Mundus on a block in the "%s" Oredict 
 mce.generic.tip.not_consumed_in_table=Not consumed in Crafting Table recipes
+mce.generic.message.unavailable_in_challenge_mode=Unavailable in Challenge Mode
 
 mce.dimension_name.minecraft_overworld=The Overworld
 mce.dimension_name.minecraft_nether=The Nether
@@ -161,6 +165,7 @@ mce.brokenwings.tip.enables_flight_in_dimension=Carrying this item enables fligh
 mce.botania.crafting_info.unfabulous_mana_pool=Gives back 5 Alfglass when crafted
 mce.botania.crafting_info.change_forest_wand_petals=Colored with the Petals used in this recipe!
 
+mce.contenttweaker.tip.untextured_item=This item has no Texture yet
 
 mce.cyclic.tip.inventory_cake_bad_at_saving=WARNING! Can delete items inside when the game crashes or closes unexpectedly
 
@@ -247,30 +252,64 @@ mce.wings.tip.fairy_dust=Can be used to transmute certain metals. This dust radi
 mce.xreliquary.tip.restores_percent_health=Restores %s% HP
 
 
-#Space Dimension Flight Stuff
-item.mce.atum_sky_scarab_crest.name=§6§lCrest of the Sky Scarab
-item.mce.atum_sky_scarab_crest.desc=Only the most ancient of the Pharaohs of Atum were<BR>members of a now lost Order of the Sky Scarab,<BR>dedicated to sealing outsiders from using the<BR>power of Flight within their desert home.<BR>perhaps with a lingering shard of their magic,<BR>you may be able to forge a workaround to the curse.
-
-item.mce.kikoku_stick.name=§6§lStick of a Thousand Clicks
-item.mce.kikoku_stick.desc=A Stick passed down throughout the<BR>Aurorian Royal lineage, once the handle<BR>of a terrible weapon that could cut at<BR>impossible speeds, seperated from the<BR>weapon to prevent its misuse.
-
-
 #Challenge Mode specific
 mce.challengemode.generic.tip.has_crafting_quirk=Hold SHIFT for info about Crafting this item!
 mce.challengemode.generic.tip.damages_inscription_tool_instead_of_consume=Crafting consumes Uses from the Inscription Tool,<BR>It does not consume it immediately.
+mce.challengemode.generic.tip.challenge_only_item=This Item is only used in Challenge Mode
+mce.challengemode.generic.message.challengemode_is_indev.1=§cPlease keep in mind that Challenge Mode is still WIP and subject to heavy changes!
+mce.challengemode.generic.message.challengemode_is_indev.2=§dProblems and suggestions can be sent to the MCE Discord's mce1-challenge-shenanigans channel.
+mce.challengemode.generic.message.challengemode_configuration_alert=§6Some Challenge Mode features can be configured in "[MODPACK]/scripts/challenge/_challengeconfig.zs", if you're playing on a server, make sure your settings match the server's!
 
 mce.challengemode.minecraft.tip.wither_only_in_some_dims=In Challenge Mode, The Wither can only<BR>be summoned in select dimensions.<BR>Hold SHIFT for a list.
 mce.challengemode.minecraft.tip.wither_only_in_some_dims.shift=Dimensions The Wither can be summoned in:<BR>The Overworld<BR>The Twilight Forest<BR>Ratlantis<BR>The Midnight
+mce.challengemode.minecraft.message.kill_enderdragon_to_leave_central_island=The End shifts around you...\nDefeat the Ender Dragon to access the Outer Islands.
 
 mce.challengemode.thermal.tip.hardened_glass_needs_osmium=In Challenge Mode, Requires Osmium instead of Obsidian.<BR>If you need this for crafting, Fused Quartz works instead!
 
-mce.challengemode.tombstone.tip.grave_key_cant_teleport=In Challenge Mode, Cannot be used to Teleport when Enchanted.
+mce.challengemode.tombstone.tip.grave_key_cant_teleport=Cannot be used to Teleport with current Challenge mode configuration.
+mce.challengemode.tombstone.tip.grave_key_teleport_allowed=Valid for Teleporting
 mce.challengemode.tombstone.message.grave_key_teleport_fail=§cThe Key's magic is too §ochallenging§c to channel.
+mce.challengemode.tombstone.message.no_revival_catalyst=§cYou need a §d§l%s§c in your offhand to do that.
+mce.challengemode.tombstone.message.key_soul_enchantment_disabled=§cEnchanting the key with a Soul is too §ochallenging§c.
+mce.challengemode.tombstone.message.enchant_with_revival_catalyst=§cYou need to enchant the key using a §d§l%s§c to Teleport with it.
 
 mce.challengemode.mysticalagriculture.tip.only_insanium_tinker_table=In Challenge Mode, Can only be made out of Insanium.
+mce.challengemode.mysticalagriculture.tip.how_get_master_infusion_crystal=Acquired from 64x Insanium Ingot quest in Challenge Mode
+
+mce.challengemode.crafting_info.consumes_demon_will=Requires and consumes %s of %t Will
+
+mce.challengemode.bloodmagic.will_type_any=Any
+mce.challengemode.bloodmagic.will_type_corrosive=Corrosive
+mce.challengemode.bloodmagic.will_type_destructive=Destructive
+mce.challengemode.bloodmagic.will_type_vengeful=Vengeful
+mce.challengemode.bloodmagic.will_type_steadfast=Steadfast
 
 #Betweenlands Restrictions
 mce.challengemode.betweenlands_restrictions.denied_entry_message.1=You are in Challenge Mode, and cannot travel to the Betweenlands with items not from it!
 mce.challengemode.betweenlands_restrictions.denied_entry_message.2=Remove any items not from The Betweenlands from yourself, then you may travel.
 mce.challengemode.betweenlands_restrictions.equipped_restricted_item=The item §oChallenges§r you to survive in this dimension without it.
 mce.challengemode.betweenlands_restrictions.equipped_enchanted_item=The item slips from your hand, the magic of this dimension does not agree with the item's magic, it would seem.
+
+
+#Custom Items
+item.contenttweaker.sky_scarab_crest.name=§6§lCrest of the Sky Scarab
+item.contenttweaker.sky_scarab_crest.desc=Only the most ancient of the Pharaohs of Atum were<BR>members of a now lost Order of the Sky Scarab,<BR>dedicated to sealing outsiders from using the<BR>power of Flight within their desert home.<BR>perhaps with a lingering shard of their magic,<BR>you may be able to forge a workaround to the curse.
+
+item.contenttweaker.kikoku_stick.name=§6§lStick of a Thousand Clicks
+item.contenttweaker.kikoku_stick.desc=A Stick passed down throughout the<BR>Aurorian Royal lineage, once the handle<BR>of a terrible weapon that could cut at<BR>impossible speeds, seperated from the<BR>weapon to prevent its misuse.
+
+item.contenttweaker.die_fragment.name=§6Fragment of Fate
+item.contenttweaker.die_fragment.desc=A mere fragment of an unusual D6.<BR>Those who roll such die are gifted with odd and powerful relics.
+
+item.contenttweaker.living_alloy.name=§cLiving Alloy
+item.contenttweaker.living_alloy.desc=An Alloy pulsing with Life.<BR>in an almost unsettling way...
+
+item.contenttweaker.amalgameat.name=Amalgamated Meat
+item.contenttweaker.amalgameat.desc=An Amalgamation of flesh from creatures of Prehistory.
+
+item.contenttweaker.revival_gem.name=Revival Gem
+item.contenttweaker.revival_gem.desc=A strange Gem with resurrective powers.<BR>Used to enchant Grave Keys to let them return you to your grave.<BR>This isn't without temporary drawbacks, however.
+
+fluid.industrial_dye_blend=Industrial Dye
+fluid.soul_dye_blend=Soul Dye
+fluid.enhanced_dye_blend=Enhanced Dye

@@ -70,7 +70,7 @@ val indGrinderFluids = {
 	<liquid:water> : 3,
 	<liquid:fluidsodiumpersulfate> : 4,
 	<liquid:fluidmercury> : 4,
-} as string[ILiquidStack];
+} as int[ILiquidStack];
 
 //Slurries which are part of base Mekanism, and do not start with "slurry" in their ID
 val baseMekSlurries = {

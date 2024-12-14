@@ -3,8 +3,12 @@ import crafttweaker.data.IData;
 import crafttweaker.enchantments.IEnchantmentDefinition;
 #MC Eternal Scripts
 
-print("--- loading Tooltip.zs ---");
+if(isNull(client)){
+	print("--- skipping loading of Tooltip.zs, as game is not a Client ---");
+	return;
+}
 
+print("--- loading Tooltip.zs ---");
 
 #Add tooltip
 <extrautils2:bagofholding>.addTooltip(format.red(game.localize("mce.extrautils2.tip.bagofholding_gamemode_change")));
@@ -135,18 +139,6 @@ for meta in candleData {
 	for enchant in candleData[meta] {
 		itemUtils.getItem("quark:candle", meta).addShiftTooltip(format.aqua("- "~game.localize(enchant.name)));
 	}
-}
-
-val nonFunctionalExtraCellsThings = [
-	<extracells:storage.component:9>,
-	<extracells:storage.component:10>,
-	<extracells:storage.fluid:5>,
-	<extracells:storage.fluid:6>
-] as IItemStack[];
-
-for thing in nonFunctionalExtraCellsThings {
-	recipes.remove(thing);
-	thing.addTooltip(format.red(game.localize("mce.extracells2.tip.fluid_storage_literally_broken")));
 }
 
 val NBeeT = {
