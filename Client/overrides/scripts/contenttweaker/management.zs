@@ -8,9 +8,24 @@ import crafttweaker.liquid.ILiquidStack;
 
 print("--- loading contenttweaker/management.zs ---");
 
+static untexturedItems as IItemStack[] = [
+    <contenttweaker:sky_scarab_crest>,
+    <contenttweaker:kikoku_stick>,
+    <contenttweaker:die_fragment>,
+    <contenttweaker:living_alloy>,
+    <contenttweaker:amalgameat>,
+    <contenttweaker:revival_gem>
+];
+
+if(!isServer)
+    for item in untexturedItems {
+        item.addTooltip(format.red(game.localize("mce.contenttweaker.tip.untextured_item")));
+    }
+
 //Items
 val challengeOnlyItems as IItemStack[] = [
-    
+    <contenttweaker:living_alloy>,
+    <contenttweaker:amalgameat>
 ];
 if(!challengeMode && !isServer)
     for item in challengeOnlyItems {
@@ -28,7 +43,8 @@ val tooltipedItems as string[IItemStack] = {
     <contenttweaker:kikoku_stick>: "item.contenttweaker.kikoku_stick.desc",
     <contenttweaker:die_fragment>: "item.contenttweaker.die_fragment.desc",
     <contenttweaker:living_alloy>: "item.contenttweaker.living_alloy.desc",
-    <contenttweaker:amalgameat>: "item.contenttweaker.amalgameat.desc"
+    <contenttweaker:amalgameat>: "item.contenttweaker.amalgameat.desc",
+    <contenttweaker:revival_gem>: "item.contenttweaker.revival_gem.desc"
 };
 
 if(!isServer)
