@@ -7,11 +7,14 @@ import crafttweaker.recipes.ICraftingInfo;
 import crafttweaker.block.IBlock;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.text.ITextComponent;
+import crafttweaker.text.IStyle;
 
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityJoinWorldEvent;
 import crafttweaker.event.EntityLivingUseItemEvent.Start;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
+
+import mods.contenttweaker.Commands;
 
 import thaumcraft.aspect.CTAspectStack;
 
@@ -22,6 +25,8 @@ import mods.thaumcraft.ArcaneWorkbench;
 import mods.thaumcraft.Infusion;
 
 import mods.thermalexpansion.InductionSmelter;
+
+import scripts.challenge._challengeconfig as challengeConfig;
 
 #MC Eternal Scripts
 
@@ -65,15 +70,17 @@ Todo stuff:
 	Shop Locks
 		Treated Wood behind Simple Alloy Smelter, so you have to make/find some first (dubious, it's not very hard in the first place)
 		Livingwood unavailable, automate it epically
-		Waystones behind Beneath? recipes also altere, Warp Stone namely
+		Waystones behind Beneath? recipes also altered, Warp Stone namely
 		Fire Axe behind Intro or something? or maybe just Pre-Wither?
 		Portal Gun unavailable? or far more expensive
 
 	Gate some teleporty things behind or near Beneath?
 		Warp Stone
 		Mek Portal
+		RFTools Matter
 
 
+	Make Atomic Reconstructors in birb structure the shattering version
 */
 
 
@@ -346,25 +353,161 @@ basicDisable(<cyclicmagic:inventory_food>, "", true);
 basicDisable(<extrautils2:playerchest>, "", true);
 
 
-//remove Enchanted Grave key
-// very dumb op, basically allows you to negate death
+//Grave Key Teleportation balancing
+// can be configured in "_challengeconfig.zs" if you want to customize aspects of it. Please do not re-hardcode things, for your own sanity.
+
+//This recipe's ingredient size is too limiting.
 recipes.removeByRecipeName("tombstone:enchanted_grave_key");
 
-// Prevent use of Enchanted keys to teleport (and disenchant them if it feels like it)
-events.onEntityLivingUseItemStart(function(event as crafttweaker.event.EntityLivingUseItemEvent.Start){
-	if(event.isPlayer && !event.player.world.remote && event.item.definition.id == "tombstone:grave_key" && event.item.hasTag){
-		if(isNull(event.item.tag.enchant) || event.item.tag.enchant.asBool() == false) return;
-		val unenchantedKey = event.item.updateTag({enchant: false});
-		for hand in [IEntityEquipmentSlot.mainHand(), IEntityEquipmentSlot.offhand()] as IEntityEquipmentSlot[] {
-			if(event.player.hasItemInSlot(hand) && event.player.getItemInSlot(hand).definition.id == "tombstone:grave_key"){
-				event.player.setItemToSlot(hand, unenchantedKey);
-				event.player.sendChat(game.localize("mce.challengemode.tombstone.message.grave_key_teleport_fail"));
-				event.player.setCooldown(<tombstone:grave_key>, 20);
+if(challengeConfig.graveKeyTeleportation){
+
+	if(challengeConfig.graveKeyEnchantCraft){
+		var keyEnchantingMaterials as IIngredient[] = [<tombstone:grave_key>.marked("key")];
+		for item in challengeConfig.graveKeyEnchantCraftItems {
+			keyEnchantingMaterials += item;
+		}
+
+		recipes.addShapeless("mce_challengemode_new_super_grave_key_enchanting_u_deluxe", <tombstone:grave_key>.withTag({enchant: true, artificiallyEnchanted: true}),
+			keyEnchantingMaterials,
+			function(out as IItemStack, ins as IItemStack[string], cInfo as ICraftingInfo){
+				if(ins.key.hasTag && (isNull(ins.key.tag.artificiallyEnchanted) || !ins.key.tag.artificiallyEnchanted.asBool()))
+					return ins.key.updateTag({enchant: true, artificiallyEnchanted: true});
+				else
+					return null;
+		});
+	}
+
+	// Grave Key Soul Enchanting handler
+	
+	events.onPlayerInteractBlock(function(event as crafttweaker.event.PlayerInteractBlockEvent){
+		if(!event.world.remote
+			&& event.hand == 'MAIN_HAND'
+			&& !isNull(event.item)
+			&& event.block.definition.id has "tombstone:decorative_"
+			&& event.item.definition.id == "tombstone:grave_key"){
+			
+			//if Disabled, prevent
+			if(!challengeConfig.graveKeySoulEnchantment){
+				event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.tombstone.message.key_soul_enchantment_disabled"));
+				event.cancellationResult = "FAIL";
+				event.cancel();
+				return;
+			}
+
+			//Grave has a Soul?
+			val graveHasSoul as bool = event.blockState.withProperty("has_soul", true).matches(event.blockState);
+
+			//if requires Soul for validating Naturally enchanted keys, and Grave has no Soul, prevent
+			if(challengeConfig.naturallyEnchantedKeyRequiresSoul && !graveHasSoul){
+				event.player.sendRichTextMessage(ITextComponent.fromTranslation("tombstone.message.enchant_item.no_soul"));
+				event.cancellationResult = "FAIL";
+				event.cancel();
+				return;
+			}
+
+			//if requires no Catalyst, proceed, or if does, ensure offhand item matches Catalyst ...
+			if((!challengeConfig.graveKeySoulEnchantmentCosts
+				|| (!isNull(event.player.offHandHeldItem) 
+					&& challengeConfig.graveKeySoulEnchantmentCatalyst.matches(event.player.offHandHeldItem)))
+				&& (isNull(event.item.tag.artificallyEnchanted) || !event.item.tag.artificiallyEnchanted.asBool())){
+
+				//if requires Catalyst, consume catalyst
+				if(challengeConfig.graveKeySoulEnchantmentCosts)
+					event.player.offHandHeldItem.mutable().shrink(1);
+
+				if(!isNull(event.item.tag.enchant) && event.item.tag.enchant.asBool()){
+					Commands.call("playsound tombstone:magic_use01 player "+ event.player.name, event.player, event.world, false, true);
+				}
+
+				//if item is already enchanted and validated, stop, as to not waste items
+				if(!isNull(event.item.tag.enchant)
+					&& event.item.tag.enchant.asBool()
+					&& !isNull(event.item.tag.artificallyEnchanted)
+					&& event.item.tag.artificallyEnchanted.asBool())
+					return;
+
+				//validate key for Teleportation
+				val artificallyEnchantedKey = event.item.updateTag({artificiallyEnchanted: true});
+				for hand in [IEntityEquipmentSlot.mainHand(), IEntityEquipmentSlot.offhand()] as IEntityEquipmentSlot[] {
+					if(event.player.getItemInSlot(hand).definition.id == "tombstone:grave_key"){
+						event.player.setItemToSlot(hand, artificallyEnchantedKey);
+						break;
+					}
+				}
+			} else {
+				//... but if requires and has no Catalyst, provide error message informing of proper Catalyst
+				event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.tombstone.message.no_revival_catalyst", [
+						ITextComponent.fromTranslation(challengeConfig.graveKeySoulEnchantmentCatalyst.name +".name").formattedText
+					])
+				);
+				event.cancellationResult = "FAIL";
 				event.cancel();
 			}
 		}
+	});
+
+
+	// Apply debilitating Debuffs when teleporting to grave to make revival much more riskful
+	if(challengeConfig.graveKeyTeleportationDebuffs){
+		events.onEntityLivingUseItemFinish(function(event as crafttweaker.event.EntityLivingUseItemEvent.Finish){
+			if(event.isPlayer
+				&& !event.entity.world.remote
+				&& event.item.definition.id == "tombstone:grave_key"
+				&& event.item.hasTag){
+
+					val unenchantedKey = event.item.removeTag("enchant");
+					for hand in [IEntityEquipmentSlot.mainHand(), IEntityEquipmentSlot.offhand()] as IEntityEquipmentSlot[] {
+						if(event.player.getItemInSlot(hand).definition.id == "tombstone:grave_key"){
+							event.player.setItemToSlot(hand, unenchantedKey);
+							break;
+						}
+					}
+
+					for effect, properties in challengeConfig.graveKeyTeleportationDebuffList {
+						val duration = !isNull(properties.duration) ? properties.duration : 200;
+						val level = !isNull(properties.level) ? properties.level - 1 : 0;
+						event.player.addPotionEffect(effect.makePotionEffect(duration, level));
+					}
+			}
+		});
 	}
-});
+
+}
+
+// Prevent use of Enchanted keys to teleport (and disenchant them if it feels like it)
+	events.onEntityLivingUseItemStart(function(event as crafttweaker.event.EntityLivingUseItemEvent.Start){
+		if(event.isPlayer
+			&& !event.player.world.remote
+			&& event.item.definition.id == "tombstone:grave_key"
+			&& event.item.hasTag){
+			print("enchanted? "+ (isNull(event.item.tag.enchant)
+				|| event.item.tag.enchant.asBool()));
+			print("artifically enchanted? "+ (isNull(event.item.tag.artificiallyEnchanted)
+				|| !event.item.tag.artificiallyEnchanted.asBool()));
+
+			if(isNull(event.item.tag.enchant)
+				|| !event.item.tag.enchant.asBool())
+					return;
+
+			val unenchantedKey = event.item.removeTag("enchant");
+			for hand in [IEntityEquipmentSlot.mainHand(), IEntityEquipmentSlot.offhand()] as IEntityEquipmentSlot[] {
+				if(event.player.hasItemInSlot(hand)
+					&& event.player.getItemInSlot(hand).definition.id == "tombstone:grave_key"
+					&& (isNull(event.item.tag.artificiallyEnchanted) || !event.item.tag.artificiallyEnchanted.asBool())){
+					event.player.setItemToSlot(hand, unenchantedKey);
+					event.player.sendRichTextMessage(ITextComponent.fromTranslation(
+						challengeConfig.graveKeyTeleportation ? 
+							"mce.challengemode.tombstone.message.enchant_with_revival_catalyst" : "mce.challengemode.tombstone.message.grave_key_teleport_fail", [
+								ITextComponent.fromTranslation(challengeConfig.graveKeySoulEnchantmentCatalyst.name +".name").formattedText
+						])
+					);
+					event.player.setCooldown(<tombstone:grave_key>, 20);
+					event.cancel();
+					break;
+				}
+			}
+		}
+	});
 
 
 //Deny Wither cheese such as sticking its face in Bedrock
@@ -417,7 +560,18 @@ events.onPlayerTick(function(event as crafttweaker.event.PlayerTickEvent){
 //Tooltips
 if(!isServer){
 	addMultilineLocalizedTooltip(<thermalfoundation:glass:3>, "mce.challengemode.thermal.tip.hardened_glass_needs_osmium");
-	<tombstone:grave_key>.addTooltip(format.red(game.localize("mce.challengemode.tombstone.tip.grave_key_cant_teleport")));
+
+	if(!challengeConfig.graveKeyTeleportation){
+		<tombstone:grave_key>.addTooltip(format.red(game.localize("mce.challengemode.tombstone.tip.grave_key_cant_teleport")));
+	} else {
+		<tombstone:grave_key>.addAdvancedTooltip(function(item as IItemStack){
+			if(!isNull(item.tag)
+				&& !isNull(item.tag.artificiallyEnchanted)
+				&& item.tag.artificiallyEnchanted.asBool())
+				return game.localize("mce.challengemode.tombstone.tip.grave_key_teleport_allowed");
+			return null;
+		});
+	}
 
 
 	val witherTooltipShift as string[] = game.localize("mce.challengemode.minecraft.tip.wither_only_in_some_dims.shift").split("<BR>");
@@ -432,8 +586,15 @@ if(!isServer){
 
 //Challenge Mode alpha status message
 events.onPlayerLoggedIn(function(event as crafttweaker.event.PlayerLoggedInEvent){
-	if(event.player.world.remote)
-		event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.generic.message.challengemode_is_indev"));
+	event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.generic.message.challengemode_is_indev.1")
+	//.style.setColor("red")
+	);
+	event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.generic.message.challengemode_is_indev.2")
+	//.style.setColor("light_purple")
+	);
+	event.player.sendRichTextMessage(ITextComponent.fromTranslation("mce.challengemode.generic.message.challengemode_configuration_alert")
+	//.style.setColor("gold")
+	);
 });
 
 print("--- challenge/misc.zs initialized ---");
