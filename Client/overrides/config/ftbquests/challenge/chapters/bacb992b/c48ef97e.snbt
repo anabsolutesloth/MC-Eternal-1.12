@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	description: "TEMP NOTE: EnderTweaker's Alloy Smelter Recipe removal is broken, meaning that this machine is able to craft many things it should not be able to, including Electrical Steel from Coal, Iron, and Silicon.",
+	dependencies: [
+		"aa126402"
+	],
+	tasks: [{
+		uid: "6da83d19",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_simple_alloy_smelter"
+		}]
+	}]
+}

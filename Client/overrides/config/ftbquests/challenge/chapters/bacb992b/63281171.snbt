@@ -1,0 +1,42 @@
+{
+	x: -4.5d,
+	y: 4.5d,
+	description: "&oDrawerporea",
+	text: [
+		"&6Corporea Crystal Cubes&r are a lot like &bStorage Drawers&r in how you operate them, &dPunch&r it to get one item out, &dSneak and Punch for a stack&r...",
+		"",
+		"But that's where the differences end, as &cthey don't have their own item capacity&r, they draw right from &dthe Corporea network's available items&r, and execute Requests on the network.",
+		"",
+		"Set a Crystal Cube's item by using that item on it.",
+		"&duse a &bWand of the Forest&d on the Cube&r to &7Lock&r it, preventing the item from being changed until unlocked in the same way.",
+		"",
+		"&cRedstone Comparators&r can also read from Cubes, and will increase their Signal Strength every time the number of items the network has doubles.",
+		"So &b1 item&r will give a &cSignal of 1&r, &b2 items&r will give a &cSignal of 2&r, &b4&r will give a &cSignal of 3&r, &b8&r a &cSignal of 4&r, you get the drill."
+	],
+	dependencies: [
+		"bfb129a8",
+		"d714a005"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f42cb8b3",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeacrystalcube"
+		}]
+	}],
+	rewards: [{
+		uid: "42d4594f",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeacrystalcube"
+		},
+		count: 2
+	}]
+}

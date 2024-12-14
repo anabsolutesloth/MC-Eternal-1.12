@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: -4.5d,
+	description: "Explore to find &6Electrical Steel&7 as Loot!",
+	text: [
+		"Alternatively, maybe somebody has discarded one in the Waters of the world..."
+	],
+	tasks: [{
+		uid: "720c14bf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "enderio:item_yeta_wrench"
+		}]
+	}]
+}

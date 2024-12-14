@@ -1,0 +1,18 @@
+{
+	x: 2.5d,
+	y: -4.5d,
+	dependencies: [
+		"c48ef97e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "35b9a2c4",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_lava_generator"
+		}]
+	}]
+}

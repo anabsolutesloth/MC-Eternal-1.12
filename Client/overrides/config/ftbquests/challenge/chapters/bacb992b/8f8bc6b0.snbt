@@ -1,0 +1,19 @@
+{
+	x: -0.5d,
+	y: -5.0d,
+	description: "Craft from a &6Blank Cast&7.",
+	dependencies: [
+		"86a039a6"
+	],
+	tasks: [{
+		uid: "e0cc896a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "tconstruct:cast_custom",
+			Damage: 3s
+		}]
+	}]
+}

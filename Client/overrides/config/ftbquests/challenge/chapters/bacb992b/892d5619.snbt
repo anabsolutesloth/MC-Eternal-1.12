@@ -1,0 +1,17 @@
+{
+	x: 3.5d,
+	y: 25.5d,
+	dependencies: [
+		"45024b19"
+	],
+	tasks: [{
+		uid: "dbaa3fda",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:pool"
+		}]
+	}]
+}

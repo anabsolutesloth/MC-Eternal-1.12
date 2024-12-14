@@ -1,0 +1,26 @@
+{
+	title: "Diluted Mana Pool",
+	x: -1.5d,
+	y: 2.0d,
+	dependencies: [
+		"48eba204"
+	],
+	tasks: [{
+		uid: "75b20fc9",
+		type: "observation",
+		title: "Look at a &6Diluted Mana Pool",
+		icon: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:pool",
+			Damage: 2s
+		},
+		match_type: "block_id",
+		match: "botania:pool",
+		properties: {
+			variant: "diluted"
+		},
+		timer: 0L
+	}]
+}

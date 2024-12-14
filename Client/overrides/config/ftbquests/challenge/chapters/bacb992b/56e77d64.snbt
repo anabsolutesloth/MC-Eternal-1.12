@@ -1,0 +1,39 @@
+{
+	x: -1.0d,
+	y: -9.0d,
+	description: "Less maddening FE generation, at &c40FE/t&7.",
+	dependencies: [
+		"f8c2d174"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ecabb6ed",
+		type: "item",
+		title: "&6Steam&r or &6Compression Dynamo",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			}
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "thermalexpansion:dynamo",
+			tag: {
+				RSControl: 0b,
+				Facing: 1b,
+				Energy: 0,
+				Level: 0b
+			},
+			Damage: 2s
+		}]
+	}]
+}

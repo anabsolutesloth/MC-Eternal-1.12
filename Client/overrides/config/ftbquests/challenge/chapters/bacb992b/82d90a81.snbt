@@ -1,0 +1,49 @@
+{
+	title: "LV Wires",
+	x: 2.0d,
+	y: -3.5d,
+	description: "&c256/t&7 (per connection)&c RF/FE&7 transfer with low price over distance. Has minor loss over distance.",
+	dependencies: [
+		"c48ef97e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c62be61d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:connector"
+		}]
+	},
+	{
+		uid: "3392f23d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:connector",
+			Damage: 1s
+		}]
+	},
+	{
+		uid: "c4112757",
+		type: "item",
+		title: "LV Wire Coil",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:wirecoil"
+		},
+		{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "immersiveengineering:wirecoil",
+			Damage: 6s
+		}]
+	}]
+}

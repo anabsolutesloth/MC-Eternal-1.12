@@ -1,0 +1,95 @@
+{
+	title: "Inventory Panel",
+	x: -4.5d,
+	y: 0.0d,
+	description: "Low-Budget AE2, High-Budget SSN, whichever you prefer",
+	text: [
+		"The &6Inventory Panel&r acts a lot like an &bME Crafting Terminal&r, with a few catches.",
+		"",
+		"- Items aren't stored instantly by dropping them into the item view, they need to be added to the &6Return Area&r instead.",
+		"Said Return Area can be switched to a &6Storage Area&r by pressing a button in the GUI, and back too.",
+		"",
+		"- &6EIO Filters&r are supported in a specific slot, filtering the items the Panel will show.",
+		"",
+		"- There are 9 &6Recipe Save Slots&r to use.",
+		"",
+		"- A &dvery small amount&r of &6Nutrient Distillation&r is consumed every handful of items requested.",
+		"",
+		"The Panel and any Containers must be connected to a network of &6Data Conduits&r.",
+		"Conduits or other such things &conly function when connected to the Panel's back&r, so you kind of need &bItem Conduits&r to make it work, otherwise you'll be switching out a Data Conduit all the time, so here, take one Item Conduit to use it (somewhat) sanely.",
+		"And a &bFluid Conduit&r too, to automate refilling the Nutrient Distillation.",
+		"",
+		"With just one Item Conduit, you'll have to be sending things to be filtered out by some other system, you're not getting more Item Conduits &othat&r easily."
+	],
+	optional: true,
+	tasks: [{
+		uid: "22d17699",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_inventory_panel"
+		}]
+	},
+	{
+		uid: "c2df362c",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:item_data_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "c8800520",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:item_item_conduit"
+		}
+	},
+	{
+		uid: "2ba303f1",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:item_extract_speed_upgrade"
+		},
+		count: 3
+	},
+	{
+		uid: "526e11e0",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:block_tank",
+			tag: {
+				"enderio:data": {
+					tank: {
+						FluidName: "nutrient_distillation",
+						Capacity: 16000,
+						Amount: 8000
+					}
+				}
+			}
+		}
+	},
+	{
+		uid: "63f2e817",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "enderio:item_liquid_conduit"
+		}
+	}]
+}

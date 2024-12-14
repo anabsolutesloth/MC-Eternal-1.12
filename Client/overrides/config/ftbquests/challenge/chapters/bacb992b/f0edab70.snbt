@@ -1,0 +1,23 @@
+{
+	x: 3.0d,
+	y: 15.5d,
+	text: [
+		"Progress into Tech and craft &6Crystal Growth Accelerators&r to speed along growing your Pure Crystals!"
+	],
+	dependencies: [
+		"8aa0d9c1"
+	],
+	tasks: [{
+		uid: "c391eae2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}]
+	}]
+}

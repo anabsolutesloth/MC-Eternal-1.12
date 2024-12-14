@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	description: "Perform the &6Wildroot Growth&7 Ritual to get &6Wildwood Logs&7",
+	dependencies: [
+		"a5bd83c0"
+	],
+	tasks: [{
+		uid: "f0af10ad",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:livingwood"
+		}]
+	}]
+}

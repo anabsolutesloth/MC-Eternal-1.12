@@ -1,0 +1,68 @@
+{
+	title: "Corporea",
+	x: -4.0d,
+	y: 3.0d,
+	description: "Text-input based Request system",
+	text: [
+		"No deposit system of its own, but has devices that enable powerful automation, especially in Challenge mode Earlygame.",
+		"",
+		"Connect Containers and Corporea Devices to the system by placing &6Corporea Sparks&r on them",
+		"The block with the &6Master Spark&r &cwill not have its contents accessible to the system&r, but nothing else is restricted, many put it on their &bCorporea Index&r.",
+		"",
+		"To Request items from the system, stand by the &6Corporea Index&r and use &dGame Chat&r to input the item's name, send the message to confirm.",
+		"You'll know you're in range when Pink sparks orbit the &bIndex&r.",
+		"&dRequests retrieve items by their current name, so renamed items will have to be called by their renamed names&r!",
+		"You can also just use the &6Corporea Request &dkeybind&r instead, which will execute a Request &dusing the name of the item hovered&r when pressed, works in most GUIs, including JEI.",
+		"Items requested will appear above the Index.",
+		"",
+		"&bCorporea Blocks&r don't exist in this version, so using &dLow-slot-count containers as \"relays\" for the network&r to mitigate impact of scanning them is advisable.",
+		"&bOpen Crates&r are a good choice for such purpose."
+	],
+	dependencies: [
+		"9c24e745"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a16f8edf",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeaspark"
+		}]
+	},
+	{
+		uid: "6c430623",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeaspark",
+			Damage: 1s
+		}]
+	},
+	{
+		uid: "d7935ae8",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeaindex"
+		}]
+	}],
+	rewards: [{
+		uid: "4314a4ba",
+		type: "item",
+		team_reward: true,
+		item: {
+			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {}
+			},
+			id: "botania:corporeaspark"
+		},
+		count: 6
+	}]
+}
