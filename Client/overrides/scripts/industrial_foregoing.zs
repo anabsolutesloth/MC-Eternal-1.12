@@ -14,21 +14,24 @@ val blackHoleFrames = {
 
 for mod,frame in blackHoleFrames {
 	val blackHoleFrameModID = (mod == "industrialforegoing" ? "" : "_"+ mod);
-    if(challengeMode && mod != "industrialforegoing") return;
 
 	recipes.removeByRecipeName("industrialforegoing:black_hole_unit"+ blackHoleFrameModID);
-	recipes.addShaped("mce_blackhole_unit_"+ mod, <industrialforegoing:black_hole_unit>, [
-		[<industrialforegoing:plastic>, <ore:enderpearl>, <industrialforegoing:plastic>],
-		[<extracells:storage.component:0>, frame, <extracells:storage.component:0>],
-		[<mekanism:teleportationcore>, <minecraft:nether_star>, <mekanism:teleportationcore>]
-	]);
-
 	recipes.removeByRecipeName("industrialforegoing:black_hole_tank"+ blackHoleFrameModID);
-	recipes.addShaped("mce_blackhole_tank_"+ mod, <industrialforegoing:black_hole_tank>, [
-		[<industrialforegoing:plastic>, <ore:enderpearl>, <industrialforegoing:plastic>],
-		[AEMaterials["64kFluid"], frame, AEMaterials["64kFluid"]],
-		[<mekanism:teleportationcore>, <minecraft:nether_star>, <mekanism:teleportationcore>]
-	]);
+
+    if(!challengeMode || challengeMode && mod == "industrialforegoing"){
+		
+		recipes.addShaped("mce_blackhole_unit_"+ mod, <industrialforegoing:black_hole_unit>, [
+			[<industrialforegoing:plastic>, <ore:enderpearl>, <industrialforegoing:plastic>],
+			[<extracells:storage.component:0>, frame, <extracells:storage.component:0>],
+			[<mekanism:teleportationcore>, <minecraft:nether_star>, <mekanism:teleportationcore>]
+		]);
+
+		recipes.addShaped("mce_blackhole_tank_"+ mod, <industrialforegoing:black_hole_tank>, [
+			[<industrialforegoing:plastic>, <ore:enderpearl>, <industrialforegoing:plastic>],
+			[AEMaterials["64kFluid"], frame, AEMaterials["64kFluid"]],
+			[<mekanism:teleportationcore>, <minecraft:nether_star>, <mekanism:teleportationcore>]
+		]);
+	}
 }
 
 // IF Tree Fluid Extractor
