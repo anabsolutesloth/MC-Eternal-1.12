@@ -105,7 +105,7 @@ mods.jei.JEI.hide(<techreborn:iron_alloy_furnace>);
 BlastFurnace.addRecipe(<ore:ingotSteel>.firstItem, <ore:ingotIron>, 400, IEItem.slag);
 BlastFurnace.addRecipe(<ore:blockSteel>.firstItem, <ore:blockIron>, 400 * 9, IEItem.slag *9);
 
-AlloySmelter.removeByInputs(<ore:ingotIron>.firstItem, <minecraft:coal>, <ore:dustCoal>.firstItem);
+//AlloySmelter.removeByInputs(<ore:ingotIron>.firstItem, <minecraft:coal>, <ore:dustCoal>.firstItem); //spits an error and doesn't work, so commented out for now
 AlloySmelter.removeByInputs(<ore:ingotIron>.firstItem, <ore:fuelCoke>.firstItem);
 
 //Removing Steel from other things

@@ -15,7 +15,8 @@ val simpleItems as string[] = [
     "kikoku_stick",
     "die_fragment",
     "living_alloy",
-    "amalgameat"
+    "amalgameat",
+    "revival_gem"
     //"hive_mind"
 ];
 

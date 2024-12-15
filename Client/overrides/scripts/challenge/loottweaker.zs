@@ -30,6 +30,8 @@ Remove Arrays of loot entries from the given Table's pools, according to Map str
 
 //CQR Material table
 val CQRMaterial = getPoolFromTable("cqrepoured:chests/material", "chests/material_pool");
+//CQR Treasure table
+val CQRTreasureRevival = getNewPool("cqrepoured:chests/treasure", "mce:revival_gem", {});
 
 //Randomthings Magic Bean pod
 val customBeanpodPool = getNewPool("randomthings:beanpod", "mce:randomthings/beanpod/mce_additions", {});
@@ -115,6 +117,12 @@ getPoolFromTable("artifacts:chest_underground", "main").addLootTableEntry("mce:s
 
 //Adding the Ingots table to Treasure2's Scarce Items pool
 scarceTreasureItems.addLootTableEntry("mce:simple_ingots", 20, 0, [], "mce:simple_ingots");
+
+
+//Revival Gem
+CQRTreasureRevival.addItemEntry(<contenttweaker:revival_gem>, 5, 2, [], [], "mce:revival_gem");
+
+CQRTreasureRevival.addEmptyEntry(25, 0, "mce:empty");
 
 
 //Stoneling Carried items pool
