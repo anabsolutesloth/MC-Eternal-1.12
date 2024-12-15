@@ -8,7 +8,10 @@ desc.immersiveengineering.info.mineral.Atometal=
 desc.immersiveengineering.info.mineral.mooncheese=
 
 #Custom IE Blueprints
+desc.immersiveengineering.info.blueprint.enderio_components=
 desc.immersiveengineering.info.blueprint.matter_engineering=
+desc.immersiveengineering.info.blueprint.structural_engineering=
+desc.immersiveengineering.info.blueprint.techreborn_machine=
 
 #Quest Chapter Names
 mce.questing.chapter.introduction.name=
@@ -30,7 +33,8 @@ mce.questing.chapter.atum.name=
 mce.questing.chapter.mystical_agriculture.name=
 mce.questing.chapter.bosses.name=
 mce.questing.chapter.challenges.name=
-mce.questing.chapter.unlockables=
+mce.questing.chapter.unlockables.name=
+mce.questing.chapter.challenge_mode.name=
 
 #Mod overrides
 enderio.darksteel.upgrade.empowered_one.tooltip.detailed.line2=
@@ -44,6 +48,67 @@ xreliquary.jei.descriptions.phoenix_down=
 
 xreliquary.item.alkahestry_tome.tooltip2=
 xreliquary.jei.descriptions.alkahestry_tome=
+xreliquary.gui.tome.text=
+
+item.theaurorian.crystallinesprite.name=
+
+achievement.dilithium=
+achievement.dilithium.desc=
+tile.Dilithium.name=
+tile.coil.dilithium.name=
+item.hovercraft.tooltip=
+material.Dilithium.name=
+
+
+#Vanillafix Crash Screen override
+#lang keys acquired from: https://github.com/DimensionalDevelopment/VanillaFix/tree/master/src/main/resources/assets/vanillafix/lang
+#not all of these messages are modified in MC Eternal
+
+vanillafix.gui.getLink=
+vanillafix.gui.failed=
+vanillafix.gui.keepPlaying=
+vanillafix.gui.restart=
+vanillafix.gui.disabledByConfig=
+
+vanillafix.crashscreen.title=
+vanillafix.crashscreen.summary=
+
+vanillafix.crashscreen.paragraph1.line1=
+
+vanillafix.crashscreen.unknownCause=
+vanillafix.crashscreen.identificationErrored=
+
+vanillafix.crashscreen.paragraph2.line1=
+vanillafix.crashscreen.paragraph2.line2=
+
+vanillafix.crashscreen.reportSaveFailed=
+
+vanillafix.crashscreen.paragraph3.line1=
+vanillafix.crashscreen.paragraph3.line2=
+vanillafix.crashscreen.paragraph3.line3=
+vanillafix.crashscreen.paragraph3.line4=
+
+vanillafix.initerrorscreen.title=
+vanillafix.initerrorscreen.summary=
+
+vanillafix.initerrorscreen.paragraph3.line1=
+vanillafix.initerrorscreen.paragraph3.line2=
+vanillafix.initerrorscreen.paragraph3.line3=
+vanillafix.initerrorscreen.paragraph3.line4=
+
+vanillafix.warnscreen.title=
+vanillafix.warnscreen.summary=
+
+vanillafix.warnscreen.paragraph1.line1=
+vanillafix.warnscreen.paragraph1.line2=
+vanillafix.warnscreen.paragraph1.line3=
+
+vanillafix.warnscreen.paragraph3.line1=
+vanillafix.warnscreen.paragraph3.line2=
+vanillafix.warnscreen.paragraph3.line3=
+vanillafix.warnscreen.paragraph3.line4=
+vanillafix.warnscreen.paragraph3.line5=
+
 
 #Misc. Tooltips
 mce.generic.tip.disabled=
@@ -56,17 +121,53 @@ mce.generic.tip.only_from_shop=
 mce.generic.tip.do_all_chapter_quests_to_unlock=
 mce.generic.tip.challengemode_disabled=
 mce.generic.message.item_yeeted_from_exist=
+mce.generic.tip.salis_mundus_craft.specific_mod_block=
+mce.generic.tip.salis_mundus_craft=
+mce.generic.tip.not_consumed_in_table=
+mce.generic.message.unavailable_in_challenge_mode=
+
+mce.dimension_name.minecraft_overworld=
+mce.dimension_name.minecraft_nether=
+mce.dimension_name.minecraft_end=
+mce.dimension_name.advrocketry_space=
+mce.dimension_name.advrocketry_moon=
+mce.dimension_name.ae2_storage_cell=
+mce.dimension_name.atum=Atum
+mce.dimension_name.aurorian=
+mce.dimension_name.beneath=
+mce.dimension_name.compactmachines=
+mce.dimension_name.dimdoors_doordims=
+mce.dimension_name.dimdoors_limbo=Limbo
+mce.dimension_name.erebus=Erebus
+mce.dimension_name.fossil_anu_lair=
+mce.dimension_name.fossil_treasure_room=
+mce.dimension_name.midnight=
+mce.dimension_name.rats_ratlantis=
+mce.dimension_name.randomthings_spectre=
+mce.dimension_name.thaumicaugmentation_emptiness=
+mce.dimension_name.twilight_forest=
+
+mce.petbuff.message.info_start=Buff Information for %s:
+mce.petbuff.message.info_line_base=%a (%v): Increase using %i (%t/%m)
+mce.petbuff.message.info_healing_items_base=Can be healed using %i (%a)
+mce.petbuff.tip.can_be_used_to_analyze=Can be used on Power-uppable Pets to see Power-up information!
 
 mce.appliedenergistics2.tip.meteors_in_beneath=
 mce.appliedenergistics2.tip.name_press.how_its_made=
 
-mce.advrocketry.message.get_there_with_rocket.1=
-mce.advrocketry.message.get_there_with_rocket.2=
+mce.advrocketry.message.get_there_with_rocket=
 mce.advrocketry.message.no_go_through_portal=
 
 mce.akashictome.tip.included_in_preloaded=
 
 mce.agricraft.tip.sprinkler_turn_off_particles_probably=
+
+mce.brokenwings.tip.enables_flight_in_dimension=Carrying this item enables flight in:
+
+mce.botania.crafting_info.unfabulous_mana_pool=
+mce.botania.crafting_info.change_forest_wand_petals=
+
+mce.contenttweaker.tip.untextured_item=
 
 mce.cyclic.tip.inventory_cake_bad_at_saving=
 
@@ -82,6 +183,8 @@ mce.extrautils2.tip.deep_dark_portal_dont_use_dummy=
 mce.extrautils2.tip.flying_squid_ring_random_tp_down=
 
 mce.ebwizardry.tip.disabled_spell=
+
+mce.erebus.tip.gaean_gem_how_to_get=
 
 mce.farmingforblockheads.tip.sink_no_infinite_water=
 
@@ -132,6 +235,8 @@ mce.thaumcraft.tip.curiosities.more_likely_to_grant=
 mce.thaumcraft.tip.unclog_lattice.filter=
 mce.thaumcraft.tip.unclog_lattice.lattice=
 
+mce.thaumicaugmentation.tip.dim_mods_in_other_dimensions=
+
 mce.tconstruct.tip.custom_smeltery_fuel=
 mce.tconstruct.tip.smeltery_fuel_stats.1=
 mce.tconstruct.tip.smeltery_fuel_stats.2=
@@ -150,13 +255,63 @@ mce.xreliquary.tip.restores_percent_health=
 
 
 #Challenge Mode specific
+mce.challengemode.generic.tip.has_crafting_quirk=
+mce.challengemode.generic.tip.damages_inscription_tool_instead_of_consume=
+mce.challengemode.generic.tip.challenge_only_item=
+mce.challengemode.generic.message.challengemode_is_indev.1=
+mce.challengemode.generic.message.challengemode_is_indev.2=
+mce.challengemode.generic.message.challengemode_configuration_alert=
+
+mce.challengemode.minecraft.tip.wither_only_in_some_dims=
+mce.challengemode.minecraft.tip.wither_only_in_some_dims.shift=
+mce.challengemode.minecraft.message.kill_enderdragon_to_leave_central_island=
+
 mce.challengemode.thermal.tip.hardened_glass_needs_osmium=
 
 mce.challengemode.tombstone.tip.grave_key_cant_teleport=
+mce.challengemode.tombstone.tip.grave_key_teleport_allowed=
 mce.challengemode.tombstone.message.grave_key_teleport_fail=
+mce.challengemode.tombstone.message.no_revival_catalyst=
+mce.challengemode.tombstone.message.key_soul_enchantment_disabled=
+mce.challengemode.tombstone.message.enchant_with_revival_catalyst=
+
+mce.challengemode.mysticalagriculture.tip.only_insanium_tinker_table=
+mce.challengemode.mysticalagriculture.tip.how_get_master_infusion_crystal=
+
+mce.challengemode.crafting_info.consumes_demon_will=
+
+mce.challengemode.bloodmagic.will_type_any=
+mce.challengemode.bloodmagic.will_type_corrosive=
+mce.challengemode.bloodmagic.will_type_destructive=
+mce.challengemode.bloodmagic.will_type_vengeful=
+mce.challengemode.bloodmagic.will_type_steadfast=
 
 #Betweenlands Restrictions
 mce.challengemode.betweenlands_restrictions.denied_entry_message.1=
 mce.challengemode.betweenlands_restrictions.denied_entry_message.2=
 mce.challengemode.betweenlands_restrictions.equipped_restricted_item=
 mce.challengemode.betweenlands_restrictions.equipped_enchanted_item=
+
+
+#Custom Items
+item.contenttweaker.sky_scarab_crest.name=
+item.contenttweaker.sky_scarab_crest.desc=
+
+item.contenttweaker.kikoku_stick.name=
+item.contenttweaker.kikoku_stick.desc=
+
+item.contenttweaker.die_fragment.name=
+item.contenttweaker.die_fragment.desc=
+
+item.contenttweaker.living_alloy.name=
+item.contenttweaker.living_alloy.desc=
+
+item.contenttweaker.amalgameat.name=
+item.contenttweaker.amalgameat.desc=
+
+item.contenttweaker.revival_gem.name=
+item.contenttweaker.revival_gem.desc=
+
+fluid.industrial_dye_blend=
+fluid.soul_dye_blend=
+fluid.enhanced_dye_blend=
