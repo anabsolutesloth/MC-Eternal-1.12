@@ -401,4 +401,518 @@
 			<itemStack>iceandfire:dragonforge_ice_brick;2</itemStack>
 		</output>
 	</Recipe>
+
+
+	<!-- MCE: Witherproof Glass -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<itemStack>enderio:block_reinforced_obsidian;1;0</itemStack>
+			<itemStack>extrautils2:decorativeglass;1;3</itemStack>
+		</input>
+		<output>
+			<itemStack>mysticalagriculture:witherproof_glass;1;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Witherproof Block -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<itemStack>enderio:block_reinforced_obsidian;1;0</itemStack>
+			<itemStack>quark:black_ash;4;0</itemStack>
+		</input>
+		<output>
+			<itemStack>mysticalagriculture:witherproof_block;1;0</itemStack>
+		</output>
+	</Recipe>
+
+
+	<!-- MCE: Construction Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>ingotLead;2</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;3;9</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Electrical Steel via Iron + Coal Dust -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>dustCoal;1</oreDict>
+			<oreDict>itemSilicon;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Electrical Steel via Steel -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotSteel;1</oreDict>
+			<oreDict>itemSilicon;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Energetic Alloy via Redstone + Glowstone -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotGold;1</oreDict>
+			<oreDict>dustRedstone;1</oreDict>
+			<oreDict>dustGlowstone;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;1</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Energetic Alloy via Energetic Blend -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotGold;1</oreDict>
+			<oreDict>dustEnergetic;2</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;1</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Vibrant Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotEnergeticAlloy;1</oreDict>
+			<oreDict>enderpearl;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;2</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Conductive Iron -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>dustRedstone;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;4</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Pulsating Iron -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>enderpearl;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;5</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Dark Steel via Iron + Coal Dust -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>dustCoal;1</oreDict>
+			<oreDict>obsidian;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;6</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Dark Steel via Steel -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotSteel;1</oreDict>
+			<oreDict>obsidian;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;6</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Soularium -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotGold;1</oreDict>
+			<oreDict>soulSand;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;7</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: End Steel via Endstone + Obsidian -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotDarkSteel;1</oreDict>
+			<oreDict>obsidian;1</oreDict>
+			<oreDict>endstone;1</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;8</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: End Steel via Dimensional Blend -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotDarkSteel;1</oreDict>
+			<oreDict>dustDimensional;2</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_alloy_ingot;1;8</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Enderium via Enderium Base -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotEnderiumBase;2</oreDict>
+			<oreDict>sand;1</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;2;167</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Nethercotta -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotBrickNether;1</oreDict>
+			<oreDict>cropNetherWart;4</oreDict>
+			<oreDict>clay;6</oreDict>
+		</input>
+		<output>
+			<itemStack>enderio:item_material;1;72</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Soulium -->
+	<Recipe timeRequired="20" power="5000">
+		<input>
+			<oreDict>essencePrudentium;4</oreDict>
+			<itemStack>mysticalagriculture:crafting;5;28</itemStack>
+		</input>
+		<output>
+			<itemStack>mysticalagriculture:crafting;1;38</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Tough Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotFerroboron;1</oreDict>
+			<oreDict>ingotLithium;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;1</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Hard Carbon -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotGraphite;2</oreDict>
+			<oreDict>gemDiamond;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;2</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Magnesium Diboride -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotBoron;2</oreDict>
+			<oreDict>ingotMagnesium;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;3;3</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Lithium Manganese Dioxide -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotManganeseDioxide;1</oreDict>
+			<oreDict>ingotLithium;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;4</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Ferroboron Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotBoron;1</oreDict>
+			<oreDict>ingotLithium;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;6</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Extreme Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotTough;1</oreDict>
+			<oreDict>ingotHardCarbon;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;1;10</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Thermoconducting Alloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotExtreme;1</oreDict>
+			<oreDict>gemBoronArsenide;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;11</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Zircaloy -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotZirconium;7</oreDict>
+			<oreDict>ingotTin;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;8;12</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Silicon Carbide -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>itemSilicon;1</oreDict>
+			<oreDict>ingotGraphite;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;2;13</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: HSLA Steel -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;15</oreDict>
+			<oreDict>dustCarbonManganese;1</oreDict>
+		</input>
+		<output>
+			<itemStack>nuclearcraft:alloy;16;15</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Alumite -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotAluminum;5</oreDict>
+			<oreDict>ingotIron;2</oreDict>
+			<oreDict>obsidian;1</oreDict>
+		</input>
+		<output>
+			<itemStack>plustic:alumiteingot;3;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Osgloglas -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotOsmium;1</oreDict>
+			<oreDict>ingotRefinedObsidian;1</oreDict>
+			<oreDict>ingotRefinedGlowstone;1</oreDict>
+		</input>
+		<output>
+			<itemStack>plustic:osgloglasingot;1;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Osmiridium -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotOsmium;1</oreDict>
+			<oreDict>ingotIridium;1</oreDict>
+		</input>
+		<output>
+			<itemStack>plustic:osmiridiumingot;2;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Mirion -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotManasteel;1</oreDict>
+			<oreDict>ingotElvenElementium;1</oreDict>
+			<oreDict>ingotTerrasteel;1</oreDict>
+			<oreDict>ingotCobalt;1</oreDict>
+			<oreDict>blockGlass;1</oreDict>
+		</input>
+		<output>
+			<itemStack>plustic:mirioningot;4;0</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Dark Soularium -->
+	<Recipe timeRequired="40" power="10000">
+		<input>
+			<oreDict>ingotDarkSteel;10</oreDict>
+			<oreDict>ingotSoularium;1</oreDict>
+			<oreDict>itemPulsatingCrystal;1</oreDict>
+		</input>
+		<output>
+			<itemStack>simplyjetpacks:metaitemmods;1;3</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Hot Tungstensteel -->
+	<Recipe timeRequired="100" power="10000">
+		<input>
+			<oreDict>ingotTungsten;1</oreDict>
+			<oreDict>ingotSteel;1</oreDict>
+		</input>
+		<output>
+			<itemStack>techreborn:ingot;1;16</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Electrum -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotGold;1</oreDict>
+			<oreDict>ingotSilver;1</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;2;161</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Invar -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;2</oreDict>
+			<oreDict>ingotNickel;1</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;3;162</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Bronze -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotCopper;3</oreDict>
+			<oreDict>ingotTin;1</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;4;163</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Constantan -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotCopper;1</oreDict>
+			<oreDict>ingotNickel;1</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;2;164</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Direct Signalum -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotCopper;3</oreDict>
+			<oreDict>ingotSilver;1</oreDict>
+			<oreDict>dustRedstone;10</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;4;165</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Direct Lumium -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotTin;3</oreDict>
+			<oreDict>ingotSilver;1</oreDict>
+			<oreDict>dustGlowstone;4</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;4;166</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Direct Enderium -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotLead;3</oreDict>
+			<oreDict>ingotPlatinum;1</oreDict>
+			<oreDict>enderpearl;4</oreDict>
+		</input>
+		<output>
+			<itemStack>thermalfoundation:material;4;167</itemStack>
+		</output>
+	</Recipe>
+
+
+	<!-- MCE: Manyullyn -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotCobalt;1</oreDict>
+			<oreDict>ingotArdite;1</oreDict>
+		</input>
+		<output>
+			<itemStack>tconstruct:ingots;1;2</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Knightslime -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;1</oreDict>
+			<oreDict>slimeballPurple;1</oreDict>
+			<oreDict>ingotBrickSeared;4</oreDict>
+		</input>
+		<output>
+			<itemStack>tconstruct:ingots;1;3</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Pig Iron -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotIron;4</oreDict>
+			<oreDict>clay;4</oreDict>
+			<oreDict>slimeballBlood;1</oreDict>
+		</input>
+		<output>
+			<itemStack>tconstruct:ingots;4;4</itemStack>
+		</output>
+	</Recipe>
+
+	<!-- MCE: Alum Brass -->
+	<Recipe timeRequired="20" power="10000">
+		<input>
+			<oreDict>ingotAluminum;3</oreDict>
+			<oreDict>ingotCopper;1</oreDict>
+		</input>
+		<output>
+			<itemStack>tconstruct:ingots;4;5</itemStack>
+		</output>
+	</Recipe>
 </Recipes>
