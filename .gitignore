@@ -5,6 +5,8 @@
 
 /Client/overrides/config/enderio/recipes/*.pdf
 /Client/overrides/config/enderio/recipes/*.xsd
+/Client/overrides/config/enderio/recipes/examples/recipes.xsd
+/Client/overrides/config/enderio/recipes/user/recipes.xsd
 /Client/overrides/resources/contenttweaker/
 /Client/overrides/config/acronym/saved/
 

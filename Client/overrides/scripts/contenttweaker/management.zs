@@ -9,12 +9,7 @@ import crafttweaker.liquid.ILiquidStack;
 print("--- loading contenttweaker/management.zs ---");
 
 static untexturedItems as IItemStack[] = [
-    <contenttweaker:sky_scarab_crest>,
-    <contenttweaker:kikoku_stick>,
-    <contenttweaker:die_fragment>,
-    <contenttweaker:living_alloy>,
-    <contenttweaker:amalgameat>,
-    <contenttweaker:revival_gem>
+    
 ];
 
 if(!isServer)
@@ -25,12 +20,13 @@ if(!isServer)
 //Items
 val challengeOnlyItems as IItemStack[] = [
     <contenttweaker:living_alloy>,
-    <contenttweaker:amalgameat>
+    <contenttweaker:amalgameat>,
+    <contenttweaker:revival_gem>
 ];
 if(!challengeMode && !isServer)
     for item in challengeOnlyItems {
         mods.jei.JEI.hide(item);
-        item.addTooltip(format.red(game.localize("mce.challengemode.generic.challenge_only_item")));
+        item.addTooltip(format.red(game.localize("mce.challengemode.generic.tip.challenge_only_item")));
     }
 
 //Oredicts
@@ -47,12 +43,15 @@ val tooltipedItems as string[IItemStack] = {
     <contenttweaker:revival_gem>: "item.contenttweaker.revival_gem.desc"
 };
 
-if(!isServer)
+if(!isServer){
     for item,tooltip in tooltipedItems {
         for line in game.localize(tooltip).split("<BR>") {
             item.addTooltip(format.italic(format.darkPurple(line)));
         }
     }
+
+    <contenttweaker:revival_gem>.addTooltip(format.gold("item.contenttweaker.revival_gem.desc2"));
+}
 
 
 //Fluid
