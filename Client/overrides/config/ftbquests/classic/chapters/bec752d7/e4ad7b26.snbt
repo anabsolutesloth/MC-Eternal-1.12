@@ -10,7 +10,8 @@
 		"Afterwards, simply carry the Bracelet(s) with you, and only the &6Upgrade(s)&7 they have set will be Trained."
 	],
 	dependencies: [
-		"3736ae94"
+		"3736ae94",
+		"c50f41bc"
 	],
 	tasks: [{
 		uid: "0ccacefe",
