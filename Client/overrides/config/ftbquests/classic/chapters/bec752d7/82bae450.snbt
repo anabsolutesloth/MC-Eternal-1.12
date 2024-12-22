@@ -10,9 +10,10 @@
 		"&7The cost of the Upgrade outweighs the Downgrade's Bonus, and the potency of a Downgrade is stronger than an Upgrade's."
 	],
 	dependencies: [
-		"a146eff2",
 		"324d9485",
-		"95505151"
+		"95505151",
+		"a146eff2",
+		"b67e51ba"
 	],
 	optional: true,
 	tasks: [{

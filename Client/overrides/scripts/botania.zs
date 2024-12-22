@@ -37,6 +37,6 @@ Orechid.addOre("oreThorium", 1200);
 
 
 //Die Fragment Scrapping
-ManaInfusion.addInfusion(manaResource.gaiaSpirit, <contenttweaker:die_fragment>, 2500);
+ManaInfusion.addInfusion(manaResource.gaiaSpirit *4, <contenttweaker:die_fragment>, 2500);
 
 print("--- botania.zs initialized ---");

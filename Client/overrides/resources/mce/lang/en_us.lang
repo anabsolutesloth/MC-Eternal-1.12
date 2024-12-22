@@ -308,6 +308,7 @@ item.contenttweaker.amalgameat.desc=An Amalgamation of flesh from creatures of P
 
 item.contenttweaker.revival_gem.name=Revival Gem
 item.contenttweaker.revival_gem.desc=A strange Gem with resurrective powers.<BR>Used to enchant Grave Keys to let them return you to your grave.<BR>This isn't without temporary drawbacks, however.
+item.contenttweaker.revival_gem.desc2=Found as Loot (Only from Chocolate Quest structures currently)
 
 fluid.industrial_dye_blend=Industrial Dye
 fluid.soul_dye_blend=Soul Dye

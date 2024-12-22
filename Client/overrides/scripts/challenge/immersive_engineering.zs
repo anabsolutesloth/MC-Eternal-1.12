@@ -95,6 +95,9 @@ for material in wireMaterials {
 
 //Blast Bricks
 recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick");
+//Convert to regular for deco
+recipes.addShapeless("mce_challengemode_immersiveengineering_blast_brick_normal", <immersiveengineering:stone_decoration:1>, [<immersiveengineering:stone_decoration:2>]);
+//Reinforced
 recipes.addShaped("mce_challengemode_immersiveengineering_reinforced_blast_brick", <immersiveengineering:stone_decoration:2> *3, [
     [IEItem.hammer.transformNew(function(item as IItemStack){
         return damageIETool(item, 3);

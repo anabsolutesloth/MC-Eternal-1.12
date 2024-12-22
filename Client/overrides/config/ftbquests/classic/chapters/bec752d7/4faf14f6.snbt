@@ -9,9 +9,10 @@
 		"Simply equip your &4Living Armor&7, activate the Ritual, and step atop the &cMaster Ritual Stone&7."
 	],
 	dependencies: [
-		"a146eff2",
 		"324d9485",
-		"95505151"
+		"95505151",
+		"a146eff2",
+		"b67e51ba"
 	],
 	optional: true,
 	tasks: [{
