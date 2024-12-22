@@ -5,16 +5,10 @@
 
 /Client/overrides/config/enderio/recipes/*.pdf
 /Client/overrides/config/enderio/recipes/*.xsd
-/Client/overrides/config/ChanceCubes/CustomRewards/Resourcepack/
 /Client/overrides/resources/contenttweaker/
 /Client/overrides/config/acronym/saved/
 
-/Client/overrides/config/InvTweaks.cfg
-/Client/overrides/config/splash.properties
-/Client/overrides/config/AppliedEnergistics2/CustomRecipes.cfg
-/Client/overrides/config/AppliedEnergistics2/VersionChecker.cfg
-/Client/overrides/config/buildcraft/detailed.properties
-/Client/overrides/config/CQR/configVersions.properties
+
 /Client/overrides/config/creativecore.json
 /Client/overrides/config/littleframes-client.json
 /Client/overrides/config/serializationisbad.json
