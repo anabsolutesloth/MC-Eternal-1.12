@@ -1,9 +1,6 @@
 {
 	title: "Wondrous Wizard Power!",
-	icon: {
-		id: "tfspellpack:twilight_spell_book",
-		Damage: 195s
-	},
+	icon: "tfspellpack:twilight_spell_book 1 195",
 	x: 1.0d,
 	y: -2.5d,
 	shape: "hexagon",
@@ -24,15 +21,15 @@
 	{
 		uid: "f8a951c9",
 		type: "item",
-		item: {
-			id: "tfspellpack:twilight_spell_book",
-			Damage: 175s
-		}
+		item: "tfspellpack:twilight_spell_book 1 175"
 	},
 	{
 		uid: "05555891",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "tfspellpack:ring_twilight"
 		}
 	}]

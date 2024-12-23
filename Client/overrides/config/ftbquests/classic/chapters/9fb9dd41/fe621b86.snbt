@@ -5,9 +5,7 @@
 		uid: "2a95a1e3",
 		type: "advancement",
 		title: "Advancement: &eHeliomancer",
-		icon: {
-			id: "mowziesmobs:grant_suns_blessing"
-		},
+		icon: "mowziesmobs:grant_suns_blessing",
 		advancement: "mowziesmobs:suns_blessing",
 		criterion: ""
 	}],

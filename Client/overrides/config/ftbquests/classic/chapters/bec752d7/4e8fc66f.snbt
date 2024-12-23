@@ -10,6 +10,10 @@
 		uid: "a0b81ec9",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumicaugmentation:impulse_cannon_augment",
 			Damage: 1s
 		}],

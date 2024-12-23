@@ -10,10 +10,10 @@
 		uid: "7c7de2b3",
 		type: "item",
 		items: [{
-			id: "naturesaura:eye_improved",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "naturesaura:eye_improved"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

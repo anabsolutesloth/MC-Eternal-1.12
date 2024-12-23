@@ -10,8 +10,7 @@
 		uid: "718a5f0b",
 		type: "item",
 		items: [{
-			id: "techreborn:ingot",
-			Damage: 3s
+			item: "techreborn:ingot 1 3"
 		}],
 		count: 8L
 	},
@@ -19,8 +18,7 @@
 		uid: "63a9e265",
 		type: "item",
 		items: [{
-			id: "techreborn:ingot",
-			Damage: 16s
+			item: "techreborn:ingot 1 16"
 		}],
 		count: 8L
 	},

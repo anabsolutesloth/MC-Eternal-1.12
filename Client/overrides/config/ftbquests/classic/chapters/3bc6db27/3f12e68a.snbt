@@ -9,7 +9,7 @@
 		uid: "1924eac8",
 		type: "item",
 		items: [{
-			id: "buildcraftfactory:tank"
+			item: "buildcraftfactory:tank"
 		}]
 	}],
 	rewards: [{

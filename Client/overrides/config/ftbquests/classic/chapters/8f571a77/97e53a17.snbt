@@ -9,7 +9,10 @@
 		uid: "3cce256b",
 		type: "item",
 		items: [{
-			item: "minecraft:diamond"
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:diamond"
 		}]
 	}],
 	rewards: [{

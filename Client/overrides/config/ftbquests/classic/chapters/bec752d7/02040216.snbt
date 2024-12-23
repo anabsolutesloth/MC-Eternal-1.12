@@ -9,10 +9,10 @@
 		uid: "922ea081",
 		type: "item",
 		items: [{
-			id: "botania:dirtrod",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:dirtrod"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

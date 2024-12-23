@@ -27,33 +27,31 @@
 		uid: "5401bd45",
 		type: "item",
 		title: "Essentia Smelter (or upgraded versions)",
-		icon: {
-			id: "thaumcraft:smelter_basic"
-		},
+		icon: "thaumcraft:smelter_basic",
 		items: [{
-			id: "thaumcraft:smelter_basic"
+			item: "thaumcraft:smelter_basic"
 		},
 		{
-			id: "thaumcraft:smelter_thaumium"
+			item: "thaumcraft:smelter_thaumium"
 		},
 		{
-			id: "thaumcraft:smelter_void"
+			item: "thaumcraft:smelter_void"
 		},
 		{
-			id: "thaumadditions:mithrillium_smelter"
+			item: "thaumadditions:mithrillium_smelter"
 		},
 		{
-			id: "thaumadditions:adaminite_smelter"
+			item: "thaumadditions:adaminite_smelter"
 		},
 		{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	},
 	{
 		uid: "76b8df13",
 		type: "item",
 		items: [{
-			id: "thaumcraft:alembic"
+			item: "thaumcraft:alembic"
 		}]
 	}],
 	rewards: [{

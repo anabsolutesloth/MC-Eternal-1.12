@@ -14,27 +14,51 @@
 		type: "item",
 		title: "Warlock Hood",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_hood_healing"
 		}],
 		ignore_damage: true,
@@ -45,27 +69,51 @@
 		type: "item",
 		title: "Warlock Robes",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_robe_healing"
 		}],
 		ignore_damage: true,
@@ -76,27 +124,51 @@
 		type: "item",
 		title: "Warlock Leggings",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_leggings_healing"
 		}],
 		ignore_damage: true,
@@ -107,27 +179,51 @@
 		type: "item",
 		title: "Warlock Boots",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:warlock_boots_healing"
 		}],
 		ignore_damage: true,
@@ -142,6 +238,9 @@
 		uid: "0aedaf7c",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_stone_tablet"
 		}
 	},
@@ -149,6 +248,9 @@
 		uid: "c8d7c22e",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet_grand"
 		},
 		count: 2

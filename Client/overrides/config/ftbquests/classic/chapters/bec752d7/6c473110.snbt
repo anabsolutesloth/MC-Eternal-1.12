@@ -1,8 +1,6 @@
 {
 	title: "It Still Works!",
-	icon: {
-		id: "ancientspellcraft:imbuement_altar_ruined"
-	},
+	icon: "ancientspellcraft:imbuement_altar_ruined",
 	x: 5.0d,
 	y: -5.5d,
 	description: "Power an Imbuement Altar by attaching a Receptable on every side of the Altar. *Read Description*",
@@ -19,9 +17,7 @@
 		uid: "8bcc8709",
 		type: "advancement",
 		title: "Advancement: &eGood as New",
-		icon: {
-			id: "ancientspellcraft:imbuement_altar_ruined"
-		},
+		icon: "ancientspellcraft:imbuement_altar_ruined",
 		advancement: "ebwizardry:restore_imbuement_altar",
 		criterion: ""
 	}],

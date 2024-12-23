@@ -10,7 +10,7 @@
 		uid: "3e1b6744",
 		type: "item",
 		items: [{
-			id: "ebwizardry:receptacle"
+			item: "ebwizardry:receptacle"
 		}],
 		count: 4L
 	}],

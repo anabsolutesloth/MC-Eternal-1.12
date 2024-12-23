@@ -95,6 +95,9 @@
 		uid: "bfe5a478",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "mod_lavacow:felarmor_chestplate"
 		}
 	}]

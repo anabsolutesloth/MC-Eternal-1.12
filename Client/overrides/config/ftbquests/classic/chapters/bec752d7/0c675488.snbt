@@ -11,14 +11,12 @@
 		uid: "ef7b60af",
 		type: "item",
 		title: "Adaminite Smeltery (or better)",
-		icon: {
-			id: "thaumadditions:adaminite_smelter"
-		},
+		icon: "thaumadditions:adaminite_smelter",
 		items: [{
-			id: "thaumadditions:adaminite_smelter"
+			item: "thaumadditions:adaminite_smelter"
 		},
 		{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	}],
 	rewards: [{

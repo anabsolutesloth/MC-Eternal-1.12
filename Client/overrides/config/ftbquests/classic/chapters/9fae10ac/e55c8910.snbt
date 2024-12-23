@@ -11,12 +11,7 @@
 		uid: "d570fd4a",
 		type: "kill",
 		title: "Kill Vampire Baron",
-		icon: {
-			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {}
-			},
-			id: "vampirism:blood_infused_iron_ingot"
-		},
+		icon: "vampirism:blood_infused_iron_ingot",
 		entity: "vampirism:vampire_baron",
 		value: 1L
 	}],

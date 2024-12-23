@@ -11,32 +11,25 @@
 		type: "item",
 		title: "4x Spectral Dust",
 		items: [{
-			id: "ebwizardry:spectral_dust",
-			Damage: 1s
+			item: "ebwizardry:spectral_dust 1 1"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 2s
+			item: "ebwizardry:spectral_dust 1 2"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 3s
+			item: "ebwizardry:spectral_dust 1 3"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 4s
+			item: "ebwizardry:spectral_dust 1 4"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 6s
+			item: "ebwizardry:spectral_dust 1 6"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 5s
+			item: "ebwizardry:spectral_dust 1 5"
 		},
 		{
-			id: "ebwizardry:spectral_dust",
-			Damage: 7s
+			item: "ebwizardry:spectral_dust 1 7"
 		}],
 		count: 4L
 	}],

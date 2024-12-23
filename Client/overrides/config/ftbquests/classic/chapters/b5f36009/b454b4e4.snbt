@@ -11,7 +11,7 @@
 		uid: "690fada5",
 		type: "item",
 		items: [{
-			id: "theaurorian:crystallinesprite"
+			item: "theaurorian:crystallinesprite"
 		}]
 	}],
 	rewards: [{

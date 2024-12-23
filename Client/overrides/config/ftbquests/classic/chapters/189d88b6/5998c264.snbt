@@ -52,7 +52,12 @@
 	{
 		uid: "0ba96422",
 		type: "item",
-		item: "minecraft:emerald"
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:emerald"
+		}
 	},
 	{
 		uid: "e7ce6ac6",

@@ -8,7 +8,7 @@
 		uid: "d80b458b",
 		type: "item",
 		items: [{
-			id: "buildcraftfactory:distiller"
+			item: "buildcraftfactory:distiller"
 		}]
 	}],
 	rewards: [{

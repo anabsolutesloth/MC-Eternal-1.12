@@ -7,7 +7,11 @@
 		items: [{
 			ForgeCaps: {
 				Parent: {
-					effectiveMaxDamage: 25
+					maxDurability: 1000,
+					repairs: 0,
+					maxRepairs: 0,
+					infinite: 0b,
+					durability: 25
 				},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},

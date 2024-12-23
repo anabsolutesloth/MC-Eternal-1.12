@@ -13,16 +13,16 @@
 		type: "item",
 		title: "Regular or Greater Band of Aura",
 		items: [{
-			id: "botania:auraring",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:auraring"
 		},
 		{
-			id: "botania:auraringgreater",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:auraringgreater"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

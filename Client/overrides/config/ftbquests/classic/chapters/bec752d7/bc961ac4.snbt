@@ -31,16 +31,16 @@
 		uid: "3d93ce25",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "pressurePlateWood",
+					id: "ore"
+				}
+			},
 			id: "itemfilters:filter",
 			tag: {
 				display: {
 					Name: "Any pressurePlateWood"
-				}
-			},
-			ForgeCaps: {
-				Parent: {
-					id: "ore",
-					data: "pressurePlateWood"
 				}
 			}
 		}]

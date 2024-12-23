@@ -9,6 +9,9 @@
 		uid: "8028c83b",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "twilightforest:knightmetal_axe"
 		}],
 		ignore_damage: true,

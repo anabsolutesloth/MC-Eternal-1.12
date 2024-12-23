@@ -9,10 +9,10 @@
 		uid: "7653a7e6",
 		type: "item",
 		items: [{
-			id: "botania:waterrod",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:waterrod"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

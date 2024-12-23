@@ -9,11 +9,11 @@
 		uid: "5f1fab09",
 		type: "item",
 		items: [{
-			id: "botania:managun",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:managun",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -10,12 +10,12 @@
 		uid: "c7eeb5a8",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "botania:lexicon",
 			tag: {
 				knowledge.alfheim: 1b
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}],
 		ignore_damage: true,

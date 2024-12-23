@@ -15,15 +15,27 @@
 		type: "item",
 		title: "Stone Tablet",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet_small"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet_large"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet_grand"
 		}],
 		ignore_damage: true,

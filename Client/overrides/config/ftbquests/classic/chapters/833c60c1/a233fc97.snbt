@@ -4,6 +4,5 @@
 	y: 0.0d,
 	text: [
 		"This quest is not intended to be completed when in Challenge mode, however, it should be automatically in Classic mode."
-	],
-	tasks: []
+	]
 }

@@ -17,9 +17,15 @@
 		type: "item",
 		title: "Looking Glass (or further star-seeing device)",
 		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "astralsorcery:itemhandtelescope"
 		},
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "astralsorcery:itemhandtelescope"
 		},
 		{

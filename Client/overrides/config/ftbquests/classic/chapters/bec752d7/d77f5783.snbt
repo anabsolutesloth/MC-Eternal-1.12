@@ -9,11 +9,11 @@
 		uid: "72539099",
 		type: "item",
 		items: [{
-			id: "botania:manamirror",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:manamirror",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

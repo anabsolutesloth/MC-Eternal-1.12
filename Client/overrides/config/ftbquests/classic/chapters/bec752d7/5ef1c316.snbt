@@ -11,18 +11,36 @@
 		type: "item",
 		title: "Caster's Gauntlet (or alternate versions)",
 		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumcraft:caster_basic"
 		},
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumcraft:caster_basic"
 		},
 		{
+			ForgeCaps: {
+				Parent: {
+					slots: 3
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumicaugmentation:gauntlet",
 			tag: {
 				color: 8022208
 			}
 		},
 		{
+			ForgeCaps: {
+				Parent: {
+					slots: 3
+				},
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumicaugmentation:gauntlet",
 			tag: {
 				color: 2498903
@@ -30,6 +48,9 @@
 			Damage: 1s
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumicperiphery:caster_elementium"
 		}],
 		ignore_damage: true,

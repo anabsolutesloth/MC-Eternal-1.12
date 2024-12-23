@@ -14,23 +14,21 @@
 		uid: "b45185ff",
 		type: "item",
 		title: "Thaumium Essentia Smeltery (or better)",
-		icon: {
-			id: "thaumcraft:smelter_thaumium"
-		},
+		icon: "thaumcraft:smelter_thaumium",
 		items: [{
-			id: "thaumcraft:smelter_thaumium"
+			item: "thaumcraft:smelter_thaumium"
 		},
 		{
-			id: "thaumcraft:smelter_void"
+			item: "thaumcraft:smelter_void"
 		},
 		{
-			id: "thaumadditions:mithrillium_smelter"
+			item: "thaumadditions:mithrillium_smelter"
 		},
 		{
-			id: "thaumadditions:adaminite_smelter"
+			item: "thaumadditions:adaminite_smelter"
 		},
 		{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	}],
 	rewards: [{

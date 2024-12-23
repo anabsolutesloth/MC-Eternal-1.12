@@ -13,7 +13,7 @@
 		uid: "02388975",
 		type: "item",
 		items: [{
-			id: "forestry:worktable"
+			item: "forestry:worktable"
 		}]
 	}],
 	rewards: [{

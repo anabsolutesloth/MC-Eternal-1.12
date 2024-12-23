@@ -12,6 +12,9 @@
 		type: "kill",
 		title: "Bounty: Vessel",
 		icon: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "twilightforest:knightmetal_sword"
 		},
 		entity: "ancientbeasts:vessel",
@@ -30,9 +33,7 @@
 	{
 		uid: "22bf9c6e",
 		type: "item",
-		item: {
-			id: "mod_lavacow:zombiepiranha_item"
-		},
+		item: "mod_lavacow:zombiepiranha_item",
 		count: 3
 	}]
 }

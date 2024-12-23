@@ -13,9 +13,7 @@
 		uid: "1d813f10",
 		type: "advancement",
 		title: "Advancement: &eI Think My Books Are Overdue",
-		icon: {
-			id: "ebwizardry:ruined_spell_book"
-		},
+		icon: "ebwizardry:ruined_spell_book",
 		advancement: "ebwizardry:find_library_ruins",
 		criterion: ""
 	}],

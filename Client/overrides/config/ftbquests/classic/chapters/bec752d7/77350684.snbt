@@ -10,10 +10,10 @@
 		uid: "fdc729bb",
 		type: "item",
 		items: [{
-			id: "botania:cloudpendant",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:cloudpendant"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

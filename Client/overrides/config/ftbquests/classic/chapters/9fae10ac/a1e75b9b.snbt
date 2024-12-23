@@ -12,7 +12,6 @@
 		type: "kill",
 		icon: {
 			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
 			id: "mowziesmobs:wrought_helmet"
@@ -34,9 +33,6 @@
 		uid: "c4ba5430",
 		type: "item",
 		item: {
-			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {}
-			},
 			id: "ftbquests:lootcrate",
 			tag: {
 				type: "unclaimed_black_market_container"

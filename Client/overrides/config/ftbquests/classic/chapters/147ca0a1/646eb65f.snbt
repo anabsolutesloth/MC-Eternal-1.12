@@ -11,6 +11,9 @@
 		uid: "6aabaa4c",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "atum:scarab"
 		}],
 		ignore_damage: true,

@@ -14,10 +14,7 @@
 		uid: "2d3e68f5",
 		type: "item",
 		items: [{
-			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {}
-			},
-			id: "testdummy:dummy"
+			item: "testdummy:dummy"
 		}]
 	}],
 	rewards: [{
@@ -29,9 +26,6 @@
 		uid: "c1e14bf2",
 		type: "item",
 		item: {
-			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {}
-			},
 			id: "minecraft:potion",
 			tag: {
 				Potion: "minecraft:strong_strength"

@@ -14,27 +14,51 @@
 		type: "item",
 		title: "Sage Hat",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_hat_healing"
 		}],
 		ignore_damage: true,
@@ -45,27 +69,51 @@
 		type: "item",
 		title: "Sage Robes",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_robe_healing"
 		}],
 		ignore_damage: true,
@@ -76,27 +124,51 @@
 		type: "item",
 		title: "Sage Leggings",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_leggings_healing"
 		}],
 		ignore_damage: true,
@@ -107,27 +179,51 @@
 		type: "item",
 		title: "Sage Boots",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_fire"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_ice"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_lightning"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_necromancy"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_earth"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_sorcery"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ebwizardry:sage_boots_healing"
 		}],
 		ignore_damage: true,
@@ -142,6 +238,9 @@
 		uid: "88ba5585",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_knowledge_orb"
 		}
 	},
@@ -149,6 +248,9 @@
 		uid: "05e8b402",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_omnicron"
 		}
 	}]
