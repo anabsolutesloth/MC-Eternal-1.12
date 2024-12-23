@@ -24,6 +24,11 @@
 	{
 		uid: "6dd8d00b",
 		type: "item",
-		item: "minecraft:emerald"
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:emerald"
+		}
 	}]
 }

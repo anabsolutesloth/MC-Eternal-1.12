@@ -10,10 +10,10 @@
 		uid: "ee8d7e06",
 		type: "item",
 		items: [{
-			id: "botania:diviningrod",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:diviningrod"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

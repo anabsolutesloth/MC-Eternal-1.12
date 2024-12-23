@@ -1,10 +1,8 @@
 {
 	title: "Dodgy Skill",
-	icon: {
-		id: "elenaidodge2:iron_feather"
-	},
+	icon: "elenaidodge2:iron_feather",
 	x: -15.0d,
-	y: -2.50d,
+	y: -2.5d,
 	description: "What an 'LMENU' is.",
 	text: [
 		"Since MC Eternal 1.4, &6Elenai Dodge 2&r has been in the pack, but it's not been of too much use...",

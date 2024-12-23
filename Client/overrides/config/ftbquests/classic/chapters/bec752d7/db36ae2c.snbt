@@ -11,7 +11,7 @@
 		uid: "de58b7e0",
 		type: "item",
 		items: [{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	}],
 	rewards: [{

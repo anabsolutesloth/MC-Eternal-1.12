@@ -1,6 +1,9 @@
 {
 	title: "Creative Sacrificial Dagger",
 	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
 		id: "bloodmagic:sacrificial_dagger",
 		Damage: 1s
 	},
@@ -20,6 +23,9 @@
 		uid: "5f84790c",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "bloodmagic:sacrificial_dagger",
 			tag: {},
 			Damage: 1s

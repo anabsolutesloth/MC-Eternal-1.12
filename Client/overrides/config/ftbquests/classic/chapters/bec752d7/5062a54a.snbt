@@ -9,11 +9,11 @@
 		uid: "81b0ecc4",
 		type: "item",
 		items: [{
-			id: "botania:blackholetalisman",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:blackholetalisman",
+			tag: {}
 		}],
 		ignore_nbt: 1b
 	}],

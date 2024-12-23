@@ -11,17 +11,15 @@
 		uid: "898adb08",
 		type: "item",
 		title: "Mithrillium Smeltery (or better)",
-		icon: {
-			id: "thaumadditions:mithrillium_smelter"
-		},
+		icon: "thaumadditions:mithrillium_smelter",
 		items: [{
-			id: "thaumadditions:mithrillium_smelter"
+			item: "thaumadditions:mithrillium_smelter"
 		},
 		{
-			id: "thaumadditions:adaminite_smelter"
+			item: "thaumadditions:adaminite_smelter"
 		},
 		{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	}],
 	rewards: [{

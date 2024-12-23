@@ -11,12 +11,21 @@
 		type: "item",
 		title: "Any &6Spellcraft Transmutation Manipulation Bauble",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_runic_hammer"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_fabrikator_toolkit"
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:charm_scissors"
 		}],
 		ignore_damage: true,
@@ -31,6 +40,9 @@
 		uid: "3d0cb180",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:transmutation_scroll"
 		},
 		count: 2

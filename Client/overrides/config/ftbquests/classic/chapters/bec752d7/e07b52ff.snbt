@@ -11,20 +11,18 @@
 		uid: "2e658755",
 		type: "item",
 		title: "Void Metal Essentia Smeltery (or better)",
-		icon: {
-			id: "thaumcraft:smelter_void"
-		},
+		icon: "thaumcraft:smelter_void",
 		items: [{
-			id: "thaumcraft:smelter_void"
+			item: "thaumcraft:smelter_void"
 		},
 		{
-			id: "thaumadditions:mithrillium_smelter"
+			item: "thaumadditions:mithrillium_smelter"
 		},
 		{
-			id: "thaumadditions:adaminite_smelter"
+			item: "thaumadditions:adaminite_smelter"
 		},
 		{
-			id: "thaumadditions:mithminite_smelter"
+			item: "thaumadditions:mithminite_smelter"
 		}]
 	}],
 	rewards: [{

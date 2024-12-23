@@ -137,6 +137,9 @@
 		uid: "a4952838",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "futuremc:netherite_sword",
 			tag: {
 				ench: [{
@@ -166,7 +169,7 @@
 				{
 					UUIDMost: 51366,
 					UUIDLeast: 139877,
-					Amount: -2.4,
+					Amount: -2.4d,
 					Slot: "mainhand",
 					AttributeName: "generic.attackSpeed",
 					Operation: 0,

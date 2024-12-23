@@ -10,7 +10,7 @@
 		uid: "09c6843d",
 		type: "item",
 		items: [{
-			id: "ae2stuff:inscriber"
+			item: "ae2stuff:inscriber"
 		}],
 		ignore_nbt: 1b
 	}],

@@ -1511,7 +1511,12 @@
 		weight: 28
 	},
 	{
-		item: "minecraft:diamond",
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:diamond"
+		},
 		weight: 26
 	},
 	{

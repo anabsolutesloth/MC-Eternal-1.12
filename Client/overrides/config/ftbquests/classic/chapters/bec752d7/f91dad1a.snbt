@@ -9,10 +9,10 @@
 		uid: "38df6f59",
 		type: "item",
 		items: [{
-			id: "botania:supertravelbelt",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:supertravelbelt"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -9,11 +9,11 @@
 		uid: "c8c834e9",
 		type: "item",
 		items: [{
-			id: "botania:tornadorod",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:tornadorod",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

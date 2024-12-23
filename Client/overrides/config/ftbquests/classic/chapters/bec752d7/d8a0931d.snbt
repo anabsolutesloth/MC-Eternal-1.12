@@ -16,7 +16,7 @@
 		uid: "e43decdb",
 		type: "item",
 		items: [{
-			id: "thaumcraft:jar_normal"
+			item: "thaumcraft:jar_normal"
 		}]
 	}],
 	rewards: [{

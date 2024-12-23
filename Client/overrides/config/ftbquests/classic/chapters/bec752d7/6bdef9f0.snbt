@@ -9,10 +9,10 @@
 		uid: "7c117937",
 		type: "item",
 		items: [{
-			id: "naturesaura:aura_cache",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "naturesaura:aura_cache"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

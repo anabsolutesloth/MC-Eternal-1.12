@@ -10,10 +10,10 @@
 		uid: "5b8b0b58",
 		type: "item",
 		items: [{
-			id: "botania:icependant",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:icependant"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

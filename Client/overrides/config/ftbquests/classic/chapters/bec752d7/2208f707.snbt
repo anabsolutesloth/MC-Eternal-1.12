@@ -9,10 +9,10 @@
 		uid: "8b0c55fd",
 		type: "item",
 		items: [{
-			id: "botania:terrasword",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:terrasword"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

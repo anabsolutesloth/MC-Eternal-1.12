@@ -15,6 +15,9 @@
 		uid: "152727b8",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:astral_diamond_charged"
 		}],
 		ignore_damage: true,

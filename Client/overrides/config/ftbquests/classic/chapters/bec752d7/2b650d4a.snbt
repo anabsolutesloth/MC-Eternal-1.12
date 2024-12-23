@@ -11,10 +11,10 @@
 		uid: "9f418e21",
 		type: "item",
 		items: [{
-			id: "botania:reachring",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:reachring"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

@@ -11,25 +11,25 @@
 		type: "item",
 		title: "Mana Tablet or Standard/Greater Band of Mana",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "botania:manatablet",
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		},
 		{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "botania:manaring",
-			tag: {},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			tag: {}
 		},
 		{
-			id: "botania:manaringgreater",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:manaringgreater",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

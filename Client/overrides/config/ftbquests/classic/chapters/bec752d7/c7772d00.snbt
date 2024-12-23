@@ -9,14 +9,16 @@
 		uid: "082132f0",
 		type: "item",
 		items: [{
-			id: "twilightforest:twilight_sapling",
-			Damage: 9s
+			item: "twilightforest:twilight_sapling 1 9"
 		}]
 	}],
 	rewards: [{
 		uid: "06c2d691",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "tfspellpack:charm_goblin"
 		}
 	},
@@ -29,6 +31,9 @@
 		uid: "d0a150ca",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "twilightforest:shield_scepter"
 		}
 	}]

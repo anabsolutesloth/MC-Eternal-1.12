@@ -25,7 +25,12 @@
 	{
 		uid: "00ad9dac",
 		type: "item",
-		item: "minecraft:diamond",
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:diamond"
+		},
 		count: 10
 	}]
 }

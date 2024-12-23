@@ -1,6 +1,5 @@
 {
 	title: "&6Simple Alloy Smelter&r (Challenge Mode)",
 	x: 0.0d,
-	y: -2.0d,
-	tasks: []
+	y: -2.0d
 }

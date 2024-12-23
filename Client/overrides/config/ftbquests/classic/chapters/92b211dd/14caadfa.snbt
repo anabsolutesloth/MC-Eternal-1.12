@@ -44,14 +44,14 @@
 		uid: "d2102483",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "forestry:apiarist_chest",
 			tag: {
 				display: {
 					Name: "I went to the moon and all I got was this stupid shirt"
 				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}
 	}]

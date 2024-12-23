@@ -1,6 +1,9 @@
 {
 	title: "Creative Mana Tablet",
 	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
 		id: "botania:manatablet",
 		tag: {
 			mana: 1000,
@@ -23,6 +26,9 @@
 		uid: "18b907be",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "botania:manatablet",
 			tag: {
 				mana: 1000,

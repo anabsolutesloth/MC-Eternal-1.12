@@ -101,7 +101,12 @@
 		count: 16
 	},
 	{
-		item: "minecraft:diamond",
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:diamond"
+		},
 		count: 32,
 		weight: 2
 	},
@@ -1001,7 +1006,12 @@
 		item: "quark:paper_wall_sakura"
 	},
 	{
-		item: "minecraft:diamond",
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:diamond"
+		},
 		count: 32
 	},
 	{
@@ -1539,6 +1549,7 @@
 	{
 		item: {
 			ForgeCaps: {
+				"wizardryutils:summoneditemdata": {},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
 			id: "mod_lavacow:bonesword"

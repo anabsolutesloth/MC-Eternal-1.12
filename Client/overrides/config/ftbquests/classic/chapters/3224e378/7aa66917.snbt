@@ -11,6 +11,9 @@
 		uid: "fbcb4a45",
 		type: "item",
 		items: [{
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "erebus:portal_activator"
 		}],
 		ignore_damage: true,

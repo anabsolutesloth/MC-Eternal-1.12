@@ -10,7 +10,7 @@
 		uid: "5bfbf09b",
 		type: "item",
 		items: [{
-			id: "nuclearcraft:radiation_scrubber"
+			item: "nuclearcraft:radiation_scrubber"
 		}],
 		count: 8L
 	}],

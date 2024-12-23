@@ -16,11 +16,10 @@
 		type: "item",
 		title: "Any &6Fluix Transformer",
 		items: [{
-			id: "immersivecables:transformer_fluix"
+			item: "immersivecables:transformer_fluix"
 		},
 		{
-			id: "immersivecables:transformer_fluix",
-			Damage: 1s
+			item: "immersivecables:transformer_fluix 1 1"
 		}]
 	},
 	{
@@ -28,11 +27,10 @@
 		type: "item",
 		title: "Any &6Fluix Wire Relay",
 		items: [{
-			id: "immersivecables:relay_fluix"
+			item: "immersivecables:relay_fluix"
 		},
 		{
-			id: "immersivecables:relay_fluix",
-			Damage: 1s
+			item: "immersivecables:relay_fluix 1 1"
 		}]
 	},
 	{
@@ -40,11 +38,10 @@
 		type: "item",
 		title: "Any &6Fluix Wire Coil",
 		items: [{
-			id: "immersivecables:wire_coil"
+			item: "immersivecables:wire_coil"
 		},
 		{
-			id: "immersivecables:wire_coil",
-			Damage: 1s
+			item: "immersivecables:wire_coil 1 1"
 		}]
 	}],
 	rewards: [{
@@ -55,18 +52,13 @@
 	{
 		uid: "47dc7fed",
 		type: "item",
-		item: {
-			id: "immersivecables:wire_coil"
-		},
+		item: "immersivecables:wire_coil",
 		count: 8
 	},
 	{
 		uid: "67c69c17",
 		type: "item",
-		item: {
-			id: "immersivecables:wire_coil",
-			Damage: 1s
-		},
+		item: "immersivecables:wire_coil 1 1",
 		count: 4
 	}]
 }

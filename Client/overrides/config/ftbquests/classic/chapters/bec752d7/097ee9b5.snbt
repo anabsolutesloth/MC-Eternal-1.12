@@ -12,7 +12,7 @@
 		uid: "4e8bf224",
 		type: "item",
 		items: [{
-			id: "ebwizardry:medium_mana_flask"
+			item: "ebwizardry:medium_mana_flask"
 		}]
 	}],
 	rewards: [{
@@ -23,9 +23,7 @@
 	{
 		uid: "53947d61",
 		type: "item",
-		item: {
-			id: "ebwizardry:identification_scroll"
-		}
+		item: "ebwizardry:identification_scroll"
 	},
 	{
 		uid: "db976135",

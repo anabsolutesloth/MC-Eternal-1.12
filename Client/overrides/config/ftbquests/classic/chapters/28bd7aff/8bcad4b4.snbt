@@ -24,6 +24,11 @@
 	{
 		uid: "db40b54c",
 		type: "item",
-		item: "minecraft:emerald"
+		item: {
+			ForgeCaps: {
+				"treasure2:pouchable": {}
+			},
+			id: "minecraft:emerald"
+		}
 	}]
 }

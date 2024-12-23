@@ -19,7 +19,6 @@
 		type: "item",
 		items: [{
 			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {},
 				"astralsorcery:cap_item_amulet_holder": {}
 			},
 			id: "thaumicaugmentation:rift_jar"
@@ -30,14 +29,14 @@
 		uid: "6ed51386",
 		type: "item",
 		items: [{
-			id: "thaumicaugmentation:rift_mover_input"
+			item: "thaumicaugmentation:rift_mover_input"
 		}]
 	},
 	{
 		uid: "a9def0ff",
 		type: "item",
 		items: [{
-			id: "thaumicaugmentation:rift_mover_output"
+			item: "thaumicaugmentation:rift_mover_output"
 		}]
 	}],
 	rewards: [{

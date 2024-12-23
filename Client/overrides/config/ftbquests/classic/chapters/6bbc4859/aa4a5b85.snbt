@@ -1,6 +1,9 @@
 {
 	title: "Creative Flux Sponge",
 	icon: {
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		},
 		id: "thaumcraft:creative_flux_sponge"
 	},
 	x: 3.5d,
@@ -19,6 +22,9 @@
 		uid: "cf528237",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "thaumcraft:creative_flux_sponge"
 		}
 	}]

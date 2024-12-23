@@ -10,10 +10,7 @@
 		uid: "4885ea4b",
 		type: "advancement",
 		title: "Advancement: &eLost Knowledge",
-		icon: {
-			id: "ancientspellcraft:ancient_spell_book",
-			Damage: 1s
-		},
+		icon: "ancientspellcraft:ancient_spell_book 1 1",
 		advancement: "ancientspellcraft:ancient_book",
 		criterion: ""
 	}],
@@ -26,6 +23,9 @@
 		uid: "d0a73e51",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "ancientspellcraft:stone_tablet"
 		}
 	}]

@@ -11,10 +11,10 @@
 		uid: "6426ebe5",
 		type: "item",
 		items: [{
-			id: "botania:terraformrod",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:terraformrod"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

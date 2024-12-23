@@ -28,28 +28,29 @@
 		uid: "c39690cd",
 		type: "item",
 		items: [{
-			id: "twilightforest:torchberries"
+			item: "twilightforest:torchberries"
 		}]
 	},
 	{
 		uid: "d4096d2b",
 		type: "item",
 		items: [{
-			id: "minecraft:glowstone_dust"
+			item: "minecraft:glowstone_dust"
 		}]
 	}],
 	rewards: [{
 		uid: "ba4c60fb",
 		type: "choice",
-		icon: {
-			id: "twilightforest:huge_waterlily"
-		},
+		icon: "twilightforest:huge_waterlily",
 		table: 18
 	},
 	{
 		uid: "40e985fe",
 		type: "item",
 		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
 			id: "tfspellpack:amulet_steeleaf"
 		}
 	}]

@@ -9,10 +9,10 @@
 		uid: "0a7b11d9",
 		type: "item",
 		items: [{
-			id: "naturesaura:mover_cart",
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "naturesaura:mover_cart"
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

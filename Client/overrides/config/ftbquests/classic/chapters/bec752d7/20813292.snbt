@@ -13,7 +13,7 @@
 		uid: "a797f28e",
 		type: "item",
 		items: [{
-			id: "ancientspellcraft:sphere_cognizance"
+			item: "ancientspellcraft:sphere_cognizance"
 		}]
 	}],
 	rewards: [{

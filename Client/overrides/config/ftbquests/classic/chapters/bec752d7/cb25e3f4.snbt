@@ -12,11 +12,11 @@
 		uid: "c23437c8",
 		type: "item",
 		items: [{
-			id: "botania:exchangerod",
-			tag: {},
 			ForgeCaps: {
 				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			},
+			id: "botania:exchangerod",
+			tag: {}
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b

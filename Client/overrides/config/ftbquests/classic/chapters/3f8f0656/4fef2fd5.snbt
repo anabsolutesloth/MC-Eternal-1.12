@@ -10,7 +10,7 @@
 		uid: "824fc37d",
 		type: "item",
 		items: [{
-			id: "ae2stuff:grower"
+			item: "ae2stuff:grower"
 		}],
 		ignore_nbt: 1b
 	}],

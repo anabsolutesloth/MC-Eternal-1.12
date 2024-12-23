@@ -21,7 +21,7 @@
 		uid: "c72b9cbc",
 		type: "item",
 		items: [{
-			id: "thaumicaugmentation:stability_field_generator"
+			item: "thaumicaugmentation:stability_field_generator"
 		}]
 	}],
 	rewards: [{

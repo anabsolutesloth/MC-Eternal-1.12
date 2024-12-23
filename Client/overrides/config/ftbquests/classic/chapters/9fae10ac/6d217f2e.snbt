@@ -6,13 +6,7 @@
 	tasks: [{
 		uid: "2ada0cdf",
 		type: "kill",
-		icon: {
-			ForgeCaps: {
-				"wizardryutils:summoneditemdata": {}
-			},
-			id: "enderio:item_material",
-			Damage: 56s
-		},
+		icon: "enderio:item_material 1 56",
 		entity: "dungeontactics:towerguardian",
 		value: 1L
 	}],
