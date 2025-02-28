@@ -14,11 +14,11 @@ print("--- loading vampirism.zs ---");
 //ZenSummoning Vampire Barons
 // the spawnrates are bad because of reasons, so summoning!
 // replacement for the old Pure Blood crafting.
-BaronSummoning(1, [<vampirism:human_heart> *1, <vampirism:vampire_book>, <xreliquary:mob_ingredient:5>, <bloodmagic:component:29>]);
-BaronSummoning(2, [<vampirism:human_heart> *2, <vampirism:vampire_book>, <wings:bat_blood>]);
-BaronSummoning(3, [<vampirism:human_heart> *3, <vampirism:vampire_book>, <thebetweenlands:crimson_middle_gem>]);
-BaronSummoning(4, [<vampirism:human_heart> *4, <vampirism:vampire_book>, <bloodmagic:blood_shard:0>]);
-BaronSummoning(5, [<vampirism:human_heart> *5, <vampirism:vampire_book>, <thaumicperiphery:malignant_heart>]);
+BaronSummoning(1, [<vampirism:human_heart> *1, <vampirism:vampire_book>, <wings:bat_blood>, EXU2Item.redstoneEye]);
+BaronSummoning(2, [<vampirism:human_heart> *2, <vampirism:vampire_book>, <xreliquary:mob_ingredient:5>, <bloodmagic:component:29>]);
+BaronSummoning(3, [<vampirism:human_heart> *3, <vampirism:vampire_book>, <thebetweenlands:crimson_middle_gem>, <vampirism:blood_infused_iron_ingot>]);
+BaronSummoning(4, [<vampirism:human_heart> *4, <vampirism:vampire_book>, <bewitchment:sigil_battle>, <bloodmagic:blood_shard:0>]);
+BaronSummoning(5, [<vampirism:human_heart> *5, <vampirism:vampire_book>, <wings:bat_wings>, <thaumicperiphery:malignant_heart>]);
 
 
 //Function to make this really simple to do.
